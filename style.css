@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    background-color:  #ebebeb;
+    height: 100rem;
+}
+nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  height: 80px;
+  background-color: #f7f2f2;
+  z-index: 6;
+}
+
+/* logo size are defined */
+#logo{
+  position: relative;
+  left: 50px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  right: 180px;
+  top: 12px;
+}
+figure h2{
+  position: relative;
+  font-size: 20px;
+  font-family: cursive;
+  right: 110px;
+  bottom: 43px;
+  /* z-index: 3; */
+}
+
+/* modifyling unordered list*/
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 40px 30px;
+  position: relative;
+  bottom: 5px;
+  right: 50px;
+  z-index: 3;
+
+}
+
+/* changing the color ,font ,text decolartionn of home , services, contact us and about  */
+nav ul li a {
+  color: #131111;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav ul li a img {
+  position: relative;
+  right: 30px;
+  top: 10px;
+
+}
+nav ul li a:hover{
+  color: #006242;
+  text-decoration: underline;
+}
+.options {
+  height: 100px;
+  position: relative;
+  left: 150px;
+  bottom: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  top: 24px;
+}
+.slides {
+  display: flex;
+  height: 100%;
+}
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#next-btn,
+#prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+#next-btn:focus,
+#prev-btn:focus {
+  outline: none;
+}
+
+.title {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.title
+h1,
+p{
+  text-align: center;
+}
+.title h1 {
+  font-weight: bold;
+  font-size: 40px;
+  font-family:cursive;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+.title p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
