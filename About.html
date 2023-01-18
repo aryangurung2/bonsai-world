@@ -1,156 +1,286 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content=" ">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-	<title>About</title>
-	 <link rel="stylesheet" href="style.css">
-	 <style>
-        header {
-            position: relative;
-            bottom: 10px;
-            height: 170px;
-        }
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content=" ">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title>About</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            header {
+                position: relative;
+                bottom: 10px;
+                height: 170px;
+            }
 
-        .head
-        {
-            display: flex;
-            justify-content: center;
-            height: 170px;
-            width: 100%;
-            background-color: #e6e6e6; 
-        }
+            .head
+            {
+                display: flex;
+                justify-content: center;
+                height: 170px;
+                width: 100%;
+                
+            }
 
-        .logo
-        {
-            height: 100px;
-            width: 220px;
-            margin-top: 50px;
-            padding-top: 20px;
-           /* background-color: blue; */ 
-        }
-        .logo img {
-            width: 70px;
-            height: 70px;
-        }
+            .logo
+            {
+                height: 100px;
+                width: 220px;
+                margin-top: 50px;
+                padding-top: 20px;
 
-        .logo h2 
-        {
-            position: relative;
-            bottom: 50px;
-            font-size: 20px;
-            font-family: monospace;
-            font-weight: bold;
-            left: 60px;    
-        }
+            }
+            .logo img {
+                width: 70px;
+                height: 70px;
+            }
 
-        .logo a{
-            color: #000000;
-            text-decoration: none;
-        }
+            .logo h2 
+            {
+                position: relative;
+                bottom: 50px;
+                font-size: 20px;
+                font-family: monospace;
+                font-weight: bold;
+                left: 60px;    
+            }
 
-        .logo a:hover
-        {
-            color: #40A944;
-            text-decoration: none;    
-        } 
-        
-        .content0
-        {
-            height: 100px;
-            width: 65%;
-            margin-top: 60px;
-            padding-top: ;
-        }
+            .logo a{
+                color: #000000;
+                text-decoration: none;
+            }
 
-        .text
-        {
-            text-align: center;
+            .logo a:hover
+            {
+                color: #40A944;
+                text-decoration: none;    
+            } 
             
-            font-style: italic;
-            font-family: sans-serif, Arial, Helvetica,;;
-        }
+            .content0
+            {
+                height: 100px;
+                width: 65%;
+                margin-top: 60px;
+            }
 
-         .main
-        {
-            display: flex;
-            justify-content: center; 
-            height: 1000px;
-            width: 100%;
-            background-color: ;
+            .text
+            { 
+                font-style: italic;
+                font-family: sans-serif, Arial, Helvetica;
+                position: relative;  
+                word-spacing: 2px; 
+                letter-spacing: 0.5px;
+                line-height: 1.6;
+                
+                
+            }
+
+            .about
+            {
+                display: flex;
+                justify-content: center; 
+                height: 500px;
+                width: 100%; 
+                background-color: #e6e6e6; 
+            }
+
+            .content1
+            {
+                height: 50px;
+                width: 150px;
+                /* margin: 0px 50px 5px 50px; */
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+            .content2
+            {
+                height: 300px;
+                width: auto;
+                float: left;
+                padding: 50px; 
+                margin-top: 50px;
+                box-shadow: -6px 6px 6px #40A944 ; 
+            }
+
+            .content2 h3
+            {
+                color: #767676;
+                
+            }
+
+            .content3
+            {
+                height: 300px;
+                width: auto; 
+                float: right;
+                padding: 50px; 
+                padding-left: 20px;
+                margin-top: 50px;
+
+                box-shadow: 6px 6px 6px #40A944;
+            }
+
+            .content3 img
+            {
+                width: auto;
+                height: 300px ;
+                
+            }
+
+            .aboutus
+            {
+                height: 800px;
+                width: 100%;  
+               /* background-color: yellow; */
+            }
+
+            .content4
+            {
+                display: flex;
+                justify-content: center;
+                /*background-color: red;*/
+                height: 50px;    
+            }
             
-        }
+            .content4 h2
+            {
+                font-size: 26px;
+                font-family: monospace;
+            }
 
-        .about
-        {
-            display: flex;
+            .content5
+            {
+                height: 100px;
+                width: auto;
+                /*background-color: red;*/
+            }
 
-            height: 300px;
-            background-color: gray;
-        }
+            .content5 p
+            {
+                font-size: 18px;
+                font-family: sans-serif;
+                word-spacing: 1.5px;
+                padding: 5px 50px 5px 50px;
+            }
 
-        .content1
-        {
-            height: 50px;
-            width: 150px;
-            background-color: red;
-        }
-	 </style>
+            .profile
+            {
+                height: 500px;
+                width: 100%;
+                /*background-color: aqua;*/
+                padding: 20px;
+            }
 
+            .profile1
+            {
+                float: left;
+                height: 250px;
+                width: 250px;
+                /*background-color: green;*/
+            }
 
+            .profile2
+            {
+                float: left;
+                height: 250px;
+                width: 250px;
+                /*background-color: blue;*/
+            }
 
-</head>
-<body>
-	<header id="header">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <div style="position:relative; left:80%; bottom: 33%; width: 150px; cursor: pointer;">
-                <img src="img/customer.png" alt="customer-logo"
+            .profile3
+            {
+                float: left;
+                height: 250px;
+                width: 250px;
+                /*background-color: red; */
+
+            }
+
+            .profile4
+            {
+                float: left;
+                height: 250px;
+                width: 250px;
+               /* background-color: yellowgreen;*/
+
+            }
+        </style>
+    </head>
+    <body>
+	    <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div style="position:relative; left:80%; bottom: 33%; width: 150px; cursor: pointer;">
+                    <img src="img/customer.png" alt="customer-logo"
                         style="width: 25px; height: 25px; position: relative; right: 10px;bottom: 2px;">
-                <h3 class="customer"
+                    <h3 class="customer"
                         style="display: inline; font-size: 16px; font-family:sans-serif; font-weight: lighter; letter-spacing: 2px; position: relative; bottom: 13px;">
                         01-3457802</h3>
-                <p class="customer"
+                    <p class="customer"
                         style="font-size: 10px; font-weight: lighter; font-family: monospace; position: relative; left: 40px; bottom: 15px;">
                         Customer Support</p>
+                </div>
+            </nav>
+            <div class="head">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo" id="logo">
+                    <h2>Bonsai World</h2></a>
+                </div>
+                <div class="content0">
+                    <h2 class="text" style="font-size: 22px; padding: 30px 40px 0px 80px; font-family: monospace; text-align: center;">Welcome to Bonsai World! A place to create yout own bonsai..</h2><br>  
+                </div>   
             </div>
-        </nav>
-        <div class="head">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="logo" id="logo">
-                <h2>Bonsai World</h2></a>
-            </div>
-            <div class="content0">
-                <h2 class="text" style="font-size: 24px; padding: 40px 100px 0px 100px; ">Welcome to Bonsai World!! A place to create yout own bonsai..</h2><br>  
-            </div>   
-        </div>
-    <!-- </header>jdfkjasdkfjkdjflkjfk -->
-    <main class="main">
+        </header>
         <div class="about">
-            <div class="content1">
-                <h2 style="text-align: center;">About</h2>
-            </div>
             <div class="content2">
-                <h2>Mission</h2>
+                <h2 class="text" >Vision</h2><br>
+                <h3 class="text">Extending greenery of mother land with a small step.</h3> 
+                <br>
+                <br>
+                <h2 class="text">Mission</h2><br>
+                <h3 class="text">To create and provide inclusive bonsai.</h3>
                 
             </div>
             <div class="content3">
-                <img src="">
+                <img src="img/bonsai2.jpg" alt="img"> 
             </div>
         </div>
-    </main>
-    <footer class="footer">
+        <div class="aboutus">
+            <div class="content4">
+                <h2>About Us</h2>
+            </div>
+            <div class="content5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum ex voluptates magni atque nam iste, animi numquam corporis molestiae itaque quisquam aliquid accusantium, non consequuntur qui culpa obcaecati praesentium.</p>
+            </div>
+            <div class="profile">
+                <div class="profile1">
+
+                </div>
+                <div class="profile2">
+
+                </div>
+                <div class="profile3">
+
+                </div>
+                <div class="profile4">
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
         
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
