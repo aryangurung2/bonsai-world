@@ -172,22 +172,24 @@
             {
                 height: 500px;
                 width: 95%;
-                background-color: aqua;
                 padding: 20px;
             }
 
             .profile div
             {
-                margin: 20px;
+                margin: 20px; 
+                float: left;
+                height: 400px;
+                width: 300px;
             }
-
+            /**
             .profile1
             {
                 float: left;
                 height: 300px;
                 width: 300px;
             
-                background-color: green;
+                
             }
 
             .profile2
@@ -195,7 +197,7 @@
                 float: left;
                 height: 300px;
                 width: 300px;
-                background-color: blue;
+                
             }
 
             .profile3
@@ -203,8 +205,7 @@
                 float: left;
                 height: 300px;
                 width: 300px;
-                background-color: red; 
-
+                
             }
 
             .profile4
@@ -212,9 +213,44 @@
                 float: left;
                 height: 300px;
                 width: 300px;
-                background-color: yellowgreen;
+                
+
+            }**/
+
+            .profileimg
+            {
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+            }
+
+            .profile div .name
+            {
+                max-height: 80px;
+                width: 300px;
+                /*background-color: red;*/
+                margin: 10px 0px 10px 0px;
+                padding-top:10px ;
+                
+                
 
             }
+
+            .profile h3
+            {
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 20px;
+                line-height: 1.6;
+
+            }
+
+            .profile h4
+            {
+                text-align: center;
+                font-family: cursive ;
+            }
+
         </style>
     </head>
     <body>
@@ -271,21 +307,102 @@
             </div>
             <div class="profile">
                 <div class="profile1">
-                    <a href="#"><img src="#" alt="pic" class="profileimg"></a>
+                    <a href="#"><img src="img/evergreen1.jpg" alt="pic" class="profileimg">
+                    <div class="name">
+                        <h3>Aryan Gurung</h3>
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                    </a>
                 </div>
                 <div class="profile2">
-                    <a href="#"><img src="#" alt="pic" class="profileimg"></a>
+                    <a href="#"><img src="#" alt="pic" class="profileimg">
+                    <div class="name">
+                        <h3>Ishwor Shrestha</h3>
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                    </a>
                 </div>
                 <div class="profile3">
-                    <a href="#"><img src="#" alt="pic" class="profileimg"></a>
+                    <a href="#"><img src="#" alt="pic" class="profileimg">
+                    <div class="name">
+                        <h3>Pramit</h3>
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                    </a>
                 </div>
                 <div class="profile4">
-                    <a href="#"><img src="#" alt="pic" class="profileimg"></a>
+                    <a href="#"><img src="#" alt="pic" class="profileimg">
+                    <div class="name">
+                        <h3>Upama </h3>
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                    </a>
                 </div>
             </div>
 
         </div>
-        <footer class="footer">
+        <footer>
+            <div class="foot" style="width: 100%; height: 450px;">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo" id="logo">
+                    <h2>Bonsai World</h2>
+                </div>
+                <div class="address">
+                    <p
+                        style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 500px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px;">
+                        Bonsai World is a company that sells bonsai plants and supplies. We also offer educational resources
+                        on bonsai cultivation and design.</p>
+                    <p class="footer-para"><span class="span">Address : </span> Kamal Pokhari, Kathmandu, Nepal</p>
+                    <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
+                    <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
+                </div>
+                <div class="quick-link">
+                    <h3 class="footer-title">Quick link</h3>
+                    <ul class="footer-quick">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter</h3>
+                    <p
+                        style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 300px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px; position: relative; top: 10px;">
+                        Get updates by subscribe our weekly newsletter</p>
+    
+                    <input type="email" name="search" placeholder="Email address..." style=" width: 220px;
+                        height: 25px;
+                        border: 1px solid #e6e6e6;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        padding: 10px;
+                        padding-left: 30px;
+                        margin: 5px;
+                        position: relative;
+                        top: 10px;">
+                    <button class="subscribe" type="submit">
+                        <h3
+                            style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 10px 5px 0;">
+                            subscribe</h3>
+                    </button>
+    
+                </div>
+                <div class="footer-payment">
+                    <p
+                        style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 185px; top: 30px;line-height: 23px;">
+                        Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
+                    </p>
+                    <ul class="footer-quick"
+                        style="display: flex; justify-content: flex-end; position: relative; right: 100px; bottom: 47px;">
+                        <li><img src="img/cash1.png" alt="paymetn"></li>
+                        <li><img src="img/visa1.png" alt="payement"></li>
+                        <li><img src="img/master.png" alt="payement"></li>
+                    </ul>
+    
+                </div>
+            </div>
         
         </footer>
     </body>
