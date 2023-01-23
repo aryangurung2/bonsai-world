@@ -11,94 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Bonsai World</title>
     <style>
-        header {
-            position: relative;
-            bottom: 10px;
-            height: 170px;
-        }
-
-        .head {
-            position: relative;
-            top: 10px;
-        }
-
-        .logo {
-            width: 220px;
-            height: 100px;
-            position: relative;
-            left: 180px;
-            top: 50px;
-        }
-
-        .logo img {
-            width: 70px;
-            height: 70px;
-        }
-
-        .logo h2 {
-            position: relative;
-            bottom: 50px;
-            font-size: 20px;
-            font-family: monospace;
-            font-weight: bold;
-            left: 64px;
-        }
-
-        .search-box {
-            width: 380px;
-            height: 50px;
-            position: relative;
-            left: 530px;
-            bottom: 40px;
-
-        }
-
-        .search-box input {
-            width: 350px;
-            height: 25px;
-            border: 1px solid #e6e6e6;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-            padding: 10px;
-            padding-left: 20px;
-            margin: 5px;
-        }
-
-        .search {
-            width: 70px;
-            height: 47px;
-            background-color: #40A944;
-            border-style: none;
-            position: relative;
-            left: 386px;
-            bottom: 52px;
-            padding: 10px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            cursor: pointer;
-        }
-
-        .search:hover {
-            background-color: #222222;
-        }
-
-        .extra {
-            display: flex;
-            position: relative;
-            width: 25rem;
-            left: 66rem;
-            bottom: 68px;
-            cursor: pointer;
-        }
-
-        .register:hover {
-            color: #40A944;
-        }
-
-        nav ul li a:hover {
-            color: #40A944;
-        }
-
         .slider {
             background-color: #e6e6e6;
             height: 480px;
@@ -182,6 +94,11 @@
 
         }
 
+
+        .table {
+            width: 360px;
+            height: 380px;
+        }
         .product {
             width: 260px;
             height: 260px;
@@ -196,11 +113,6 @@
             font-family: sans-serif;
             letter-spacing: 1px;
             font-weight: 400;
-        }
-
-        .table {
-            width: 360px;
-            height: 380px;
         }
 
         .bonsai-category {
@@ -299,6 +211,9 @@
             left: 3px;
             letter-spacing: 1px;
         }
+        .hover:hover{
+            box-shadow: 0.1px 0.1px 8px 1px #616161;
+        }
 
         .offer a {
             position: relative;
@@ -318,17 +233,16 @@
         .offer a:hover {
             background-color: #222222;
         }
-
     </style>
 </head>
 
 <body>
     <!--this is a header section-->
     <header id="header">
-         <nav>
+        <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="#">Research</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="#">Blog</a></li>
@@ -368,332 +282,94 @@
             </div>
         </div>
     </header>
-    <div class="slider">
-        <div id="img">
-            <img src="img/slide4.png" alt="bonsai">
+    <main>
+        <div class="slider">
+            <div id="img">
+                <img src="img/slide4.png" alt="bonsai">
+            </div>
+            <div class="content">
+                <h1
+                    style="color: #060606; font-family:Arial, Helvetica, sans-serif; font-weight: bolder; font-size: 45px;line-height: 50px;">
+                    Bonsai Big Sale</h1>
+                <h3
+                    style="color: #767676; word-spacing: 5px; letter-spacing: 2px; line-height: 40px; font-family: sans-serif; font-weight: 500; font-size: 27px;">
+                    Imported from Japan</h3>
+                <p
+                    style="color: #767676; line-height: 30px; font-size: 20px; font-family: sans-serif; padding-top: 10px;">
+                    Bonsai is living art. What kind of Bosai do you want to grow?</p>
+                <a href="#">Buy Now</a>
+            </div>
         </div>
-        <div class="content">
-            <h1
-                style="color: #060606; font-family:Arial, Helvetica, sans-serif; font-weight: bolder; font-size: 45px;line-height: 50px;">
-                Bonsai Big Sale</h1>
-            <h3
-                style="color: #767676; word-spacing: 5px; letter-spacing: 2px; line-height: 40px; font-family: sans-serif; font-weight: 500; font-size: 27px;">
-                Imported from Japan</h3>
-            <p style="color: #767676; line-height: 30px; font-size: 20px; font-family: sans-serif; padding-top: 10px;">
-                Bonsai is living art. What kind of Bosai do you want to grow?</p>
-            <a href="#">Buy Now</a>
-        </div>
-    </div>
-    <section class="content2">
-        <section style="position: relative; left: 100px;">
-            <img src="img/plane.png" alt="plane">
-            <h3 class="benefit">FREE SHIPPING</h3>
-            <p class="para">Free shipping all over the Nepal</p>
-        </section>
-        <section style="position: relative; left: 30px;">
-            <img src="img/24hour.png" alt="plane">
-            <h3 class="benefit">SUPPORT 24/7</h3>
-            <p class="para">Contact us 24 hours a day, 7 days a week</p>
-        </section>
-        <section style="position: relative; right: 30px;">
-            <img src="img/return.png" alt="plane">
-            <h3 class="benefit">30 DAYS RETURN</h3>
-            <p class="para">Simply return it within 30 days for an exchange</p>
-        </section>
-        <section style="position: relative; right: 100px;">
-            <img src="img/payment.png" alt="plane">
-            <h3 class="benefit">100% PAYMENT SECURE</h3>
-            <p class="para">We ensure secure payment with PEV</p>
+        <section class="content2">
+            <section style="position: relative; left: 100px;">
+                <img src="img/plane.png" alt="plane">
+                <h3 class="benefit">FREE SHIPPING</h3>
+                <p class="para">Free shipping all over the Nepal</p>
+            </section>
+            <section style="position: relative; left: 30px;">
+                <img src="img/24hour.png" alt="plane">
+                <h3 class="benefit">SUPPORT 24/7</h3>
+                <p class="para">Contact us 24 hours a day, 7 days a week</p>
+            </section>
+            <section style="position: relative; right: 30px;">
+                <img src="img/return.png" alt="plane">
+                <h3 class="benefit">30 DAYS RETURN</h3>
+                <p class="para">Simply return it within 30 days for an exchange</p>
+            </section>
+            <section style="position: relative; right: 100px;">
+                <img src="img/payment.png" alt="plane">
+                <h3 class="benefit">100% PAYMENT SECURE</h3>
+                <p class="para">We ensure secure payment with PEV</p>
+            </section>
+
         </section>
 
-    </section>
-
-    <section class="trending-products" style="height: 1050px;">
-        <h3 style="text-align: center; font-size: 35px; color: #222222; font-weight: bold; font-family:monospace;
+        <section class="trending-products" style="height: 1050px;">
+            <h3 style="text-align: center; font-size: 35px; color: #222222; font-weight: bold; font-family:monospace;
         position: relative; top: 130px; word-spacing: 10px; letter-spacing: 1px;">Trending Products</h3>
-        <table style="width: 100%; height: 800px; position: relative; top: 180px;">
-            <tr>
-                <th style=" width: 360px; height: 380px; position: relative; left: 110px;">
-                    <section class="table">
-                        <a href="#"><img src="img/evergreen2.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section style="position:relative; right: 20px">
-                            <a href="#" class="bonsai-name" style="position: relative; left: 16px; top: 20px;">Aleppo
-                                pine</a>
-                            <h5 class="bonsai-category">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price">Rs.1800</span>
-                        </section>
-                    </section>
-                </th>
-                <th style="width: 360px; height: 380px; position: relative; left: 25px;">
-                    <section class="table">
-                        <span class="new" style="position: relative; bottom: 230px; left: 70px;">NEW</span>
-                        <a href="#"><img src="img/flower1.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section style="position: relative; left: 20px;">
-                            <a href="#" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
-                            <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price" style="position: relative; right: 15px;">Rs.2500</span>
-                        </section>
-                    </section>
-                </th>
-                <th style=" width: 360px; height: 380px; position: relative; right: 15px;">
-                    <section class="table">
-                        <a href="#"><img src="img/leaf3.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section>
-                            <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
-                            <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price" style="position: relative; right: 15px;">Rs.4000</span>
-                        </section>
-                    </section>
-                </th>
-                <th style=" width: 360px; height: 380px; position: relative; right: 110px;">
-                    <section class="table">
-                        <span class="new" style="position: relative; left: 80px; bottom: 230px;">SALE</span>
-                        <a href="#"><img src="img/evergreen3.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section>
-                            <a href="#" class="bonsai-name" style="position: relative; left: 23px; top: 20px;">Aleppo
-                                pine</a>
-                            <h5 class="bonsai-category" style="position: relative; left: 6px;">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price" style="position: relative; left: 6px; color: #40A944;">Rs.1500</span>
-                            <del
-                                style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.3000</del>
-                        </section>
-                    </section>
-                </th>
-            </tr>
-            <tr style="position: relative; top: 20px;">
-                <th style=" width: 360px; height: 380px; position: relative; left: 80px;">
-                    <section class="table">
-                        <span class="new" style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
-                        <a href="#"><img src="img/fruit3.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section>
-                            <a href="#" class="bonsai-name" style="position: relative; left: 16px; top: 20px;">Aleppo
-                                pine</a>
-                            <h5 class="bonsai-category">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price">Rs.2100</span>
-                        </section>
-                    </section>
-                </th>
-                <th style="width: 360px; height: 380px; position: relative; left: 25px;">
-                    <section class="table">
-                        <span class="new" style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
-                        <a href="#"><img src="img/evergreen9.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section style="position: relative; left: 20px;">
-                            <a href="#" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
-                            <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price" style="position: relative; right: 15px;">Rs.3400</span>
-                        </section>
-                    </section>
-                </th>
-                <th style=" width: 360px; height: 380px; position: relative; right: 15px;">
-                    <section class="table">
-                        <a href="#"><img src="img/leaf2.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section>
-                            <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
-                            <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price" style="position: relative; right: 15px;">Rs.1000</span>
-                        </section>
-                    </section>
-                </th>
-                <th style=" width: 360px; height: 380px; position: relative; right: 110px;">
-                    <section class="table">
-                        <span class="new" style="position: relative; left: 80px; bottom: 230px;">SALE</span>
-                        <a href="#"><img src="img/evergreen5.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                        <section>
-                            <a href="#" class="bonsai-name" style="position: relative; left: 23px; top: 20px;">Aleppo
-                                pine</a>
-                            <h5 class="bonsai-category" style="position: relative; left: 6px;">Shohaku Bonsai</h5>
-                            <br>
-                            <span class="price" style="position: relative; left: 6px; color: #40A944;">Rs.2500</span>
-                            <del
-                                style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.4000</del>
-                        </section>
-                    </section>
-                </th>
-            </tr>
-        </table>
-    </section>
-    <div class="shop-now">
-        <section style="width: 580px; height: 200px; background-color: #e6e6e6; position: relative; left: 70px;">
-            <section style="width: 300px; left: 20px; height: 180px;">
-                <img src="img/evergreenlogo.png" alt="evergreen-logo"
-                    style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
-                <h2 style="color:#777777; width: 200px; font-family: sans-serif; font-size: 20px; position: relative; left: 70px; top: 40px;
-            letter-spacing: 2px; word-spacing: 10px;">Shohaku Bonsai</h2>
-                <br>
-                <a href="#" class="shop">Shop Now</a>
-            </section>
-            <img src="img/evergreengo.png" alt="bonsai"
-                style="width: 200px; height: 200px; position: relative; left: 320px; bottom: 180px;">
-        </section>
-        <section style="width: 580px; height: 200px; background-color: #e6e6e6; position: relative; right: 72px;">
-            <section style="width: 300px; left: 20px; height: 180px;">
-                <img src="img/flowerlogo.png" alt="flower-logo"
-                    style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
-                <img src="img/leaflogo.png" alt="leaf-logo"
-                    style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
-                <img src="img/fruitlogo.png" alt="fruit-logo"
-                    style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
-                <h2 style="color:#777777; width: 200px; font-family: sans-serif; font-size: 20px; position: relative; left: 70px; top: 40px;
-                letter-spacing: 2px; word-spacing: 10px;">ZOUKI BONSAI </h2>
-                <br>
-                <a href="#" class="shop">Shop Now</a>
-            </section>
-            <img src="img/zouki.png" alt="bonsai"
-                style="width: 280px; height: 280px; position: relative; bottom: 230px; left: 290px;">
-        </section>
-    </div>
-    <section class="deal">
-        <h2
-            style="text-align: center; font-size: 35px; font-weight: bold; font-weight: bold; color: #222222; font-family: monospace;position: relative; top: 100px; letter-spacing: 2px;">
-            Deals Of The Weeks</h2>
-        <section style="position: relative; top: 130px;">
-            <table>
+            <table style="width: 100%; height: 800px; position: relative; top: 180px;">
                 <tr>
                     <th style=" width: 360px; height: 380px; position: relative; left: 110px;">
                         <section class="table">
-                            <a href="#"><img src="img/evergreen4.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                            <section class="count" style="position: relative; left: 65px; bottom: 80px;">
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">DAY</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">HOUR</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">MIN</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">SEC</label>
-                                </section>
-                            </section>
-                            <section style="position:relative; right: 20px; bottom: 60px;">
-                                <span class="new" style="position: relative; left: 10px; bottom: 240px;">SALE</span>
-                                <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo
+                            <a href="#"><img src="img/evergreen2.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section style="position:relative; right: 20px">
+                                <a href="#" class="bonsai-name"
+                                    style="position: relative; left: 16px; top: 20px;">Aleppo
                                     pine</a>
-                                <h5 class="bonsai-category" style="position: relative; left: 7px;">Shohaku Bonsai</h5>
+                                <h5 class="bonsai-category">Shohaku Bonsai</h5>
                                 <br>
-                                <span class="price" style="color:#40A944;">Rs.999</span>
-                                <del
-                                    style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.1999</del>
+                                <span class="price">Rs.1800</span>
                             </section>
                         </section>
                     </th>
                     <th style="width: 360px; height: 380px; position: relative; left: 25px;">
                         <section class="table">
-                            <span class="new" style="position: relative; bottom: 220px; left: 70px;">SALE</span>
-                            <a href="#"><img src="img/evergreen7.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                            <section class="count" style="position: relative; left: 90px; bottom: 80px;">
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">DAY</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">HOUR</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">MIN</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">SEC</label>
-                                </section>
-                            </section>
-                            <section style="position: relative; left: 20px; bottom: 60px;">
+                            <span class="new" style="position: relative; bottom: 230px; left: 70px;">NEW</span>
+                            <a href="#"><img src="img/flower1.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section style="position: relative; left: 20px;">
                                 <a href="#" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
                                 <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
                                 <br>
-                                <span class="price"
-                                    style="position: relative; right: 15px; color: #40A944;">Rs.1250</span>
-                                <del
-                                    style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.2500</del>
+                                <span class="price" style="position: relative; right: 15px;">Rs.2500</span>
                             </section>
                         </section>
                     </th>
-                    <th style=" width: 360px; height: 380px; position: relative; right: 28px;">
+                    <th style=" width: 360px; height: 380px; position: relative; right: 15px;">
                         <section class="table">
-                            <span class="new" style="position: relative; left: 80px; bottom: 220px;">SALE</span>
-                            <a href="#"><img src="img/leaf1.jpg" alt="evergreen-bonsai" class="product"></a>
-                            <section class="count" style="position: relative; left: 90px; bottom: 80px;">
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">DAY</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">HOUR</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">MIN</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">SEC</label>
-                                </section>
-                            </section>
-                            <section style="position: relative; left: 30px; bottom: 60px;">
+                            <a href="#"><img src="img/leaf3.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section>
                                 <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
                                 <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
                                 <br>
-                                <span class="price"
-                                    style="position: relative; right: 15px; color: #40A944;">Rs.2000</span>
-                                <del
-                                    style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.4000</del>
+                                <span class="price" style="position: relative; right: 15px;">Rs.4000</span>
                             </section>
                         </section>
                     </th>
-                    <th style=" width: 360px; height: 380px; position: relative; right: 80px;">
+                    <th style=" width: 360px; height: 380px; position: relative; right: 110px;">
                         <section class="table">
-                            <span class="new" style="position: relative; left: 80px; bottom: 220px;">SALE</span>
-                            <a href="#"><img src="img/evergreen6.0.jpg" alt="evergreen-bonsai" class="product"></a>
-                            <section class="count" style="position: relative; left: 90px; bottom: 80px;">
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">DAY</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">HOUR</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">MIN</label>
-                                </section>
-                                <section>
-                                    <input type="text" value="0" readonly class="time">
-                                    <br>
-                                    <label for="">SEC</label>
-                                </section>
-                            </section>
-                            <section style="position: relative; bottom: 60px;">
+                            <span class="new" style="position: relative; left: 80px; bottom: 230px;">SALE</span>
+                            <a href="#"><img src="img/evergreen3.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section>
                                 <a href="#" class="bonsai-name"
                                     style="position: relative; left: 23px; top: 20px;">Aleppo
                                     pine</a>
@@ -707,29 +383,284 @@
                         </section>
                     </th>
                 </tr>
+                <tr style="position: relative; top: 20px;">
+                    <th style=" width: 360px; height: 380px; position: relative; left: 80px;">
+                        <section class="table">
+                            <span class="new"
+                                style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
+                            <a href="#"><img src="img/fruit3.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section>
+                                <a href="#" class="bonsai-name"
+                                    style="position: relative; left: 16px; top: 20px;">Aleppo
+                                    pine</a>
+                                <h5 class="bonsai-category">Shohaku Bonsai</h5>
+                                <br>
+                                <span class="price">Rs.2100</span>
+                            </section>
+                        </section>
+                    </th>
+                    <th style="width: 360px; height: 380px; position: relative; left: 25px;">
+                        <section class="table">
+                            <span class="new"
+                                style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
+                            <a href="#"><img src="img/evergreen9.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section style="position: relative; left: 20px;">
+                                <a href="#" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
+                                <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
+                                <br>
+                                <span class="price" style="position: relative; right: 15px;">Rs.3400</span>
+                            </section>
+                        </section>
+                    </th>
+                    <th style=" width: 360px; height: 380px; position: relative; right: 15px;">
+                        <section class="table">
+                            <a href="#"><img src="img/leaf2.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section>
+                                <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
+                                <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
+                                <br>
+                                <span class="price" style="position: relative; right: 15px;">Rs.1000</span>
+                            </section>
+                        </section>
+                    </th>
+                    <th style=" width: 360px; height: 380px; position: relative; right: 110px;">
+                        <section class="table">
+                            <span class="new" style="position: relative; left: 80px; bottom: 230px;">SALE</span>
+                            <a href="#"><img src="img/evergreen5.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <section>
+                                <a href="#" class="bonsai-name"
+                                    style="position: relative; left: 23px; top: 20px;">Aleppo
+                                    pine</a>
+                                <h5 class="bonsai-category" style="position: relative; left: 6px;">Shohaku Bonsai</h5>
+                                <br>
+                                <span class="price"
+                                    style="position: relative; left: 6px; color: #40A944;">Rs.2500</span>
+                                <del
+                                    style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.4000</del>
+                            </section>
+                        </section>
+                    </th>
+                </tr>
             </table>
         </section>
-    </section>
-    <div style="background-color: #e6e6e6; width: 100%; height: 300px; position: relative; top: 230px;">
-        <figure>
-            <img src="img/offer.png" alt="bonsai"
-                style="width: 500px; height: 500px; position: relative; left: 600px; bottom: 100px;">
-            <img src="img/banner.png" alt="bonsai"
-                style="width: 550px; height: 300px; position: relative; left: 300px; bottom: 200px;">
-        </figure>
-        <div class="offer" style="position: relative; bottom: 450px; left: 200px; width: 400px; height: 240px;">
-            <h4
-                style="color: #40A944; font-size: 15px; font-family: sans-serif; font-weight: 500; letter-spacing: 2px; position: relative; left: 13px;">
-                HAPPY NEW YEAR !</h2>
-                <h2
-                    style="font-size: 40px; font-weight: bold; font-family: monospace; letter-spacing: 2px; color: #222222; margin: 10px;">
-                    SALE 50% OFF </h2>
-                <h3
-                    style="color:#4e4e4e; font-size: 25px; font-weight: 500; font-family:sans-serif; word-spacing: 10px; position: relative; left: 10px;">
-                    All BONSAI PRODUCTS</h3>
-                <a href="#">Shop Now</a>
+        <div class="shop-now">
+            <section style="width: 580px; height: 200px; background-color: #e6e6e6; position: relative; left: 70px;">
+                <section style="width: 300px; left: 20px; height: 180px;">
+                    <img src="img/evergreenlogo.png" alt="evergreen-logo"
+                        style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
+                    <h2 style="color:#777777; width: 200px; font-family: sans-serif; font-size: 20px; position: relative; left: 70px; top: 40px;
+            letter-spacing: 2px; word-spacing: 10px;">Shohaku Bonsai</h2>
+                    <br>
+                    <a href="#" class="shop">Shop Now</a>
+                </section>
+                <img src="img/evergreengo.png" alt="bonsai"
+                    style="width: 200px; height: 200px; position: relative; left: 320px; bottom: 180px;">
+            </section>
+            <section style="width: 580px; height: 200px; background-color: #e6e6e6; position: relative; right: 72px;">
+                <section style="width: 300px; left: 20px; height: 180px;">
+                    <img src="img/flowerlogo.png" alt="flower-logo"
+                        style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
+                    <img src="img/leaflogo.png" alt="leaf-logo"
+                        style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
+                    <img src="img/fruitlogo.png" alt="fruit-logo"
+                        style="width: 40px; height: 40px; position: relative; left: 80px; top: 25px;">
+                    <h2 style="color:#777777; width: 200px; font-family: sans-serif; font-size: 20px; position: relative; left: 70px; top: 40px;
+                letter-spacing: 2px; word-spacing: 10px;">ZOUKI BONSAI </h2>
+                    <br>
+                    <a href="#" class="shop">Shop Now</a>
+                </section>
+                <img src="img/zouki.png" alt="bonsai"
+                    style="width: 280px; height: 280px; position: relative; bottom: 230px; left: 290px;">
+            </section>
         </div>
-    </div>
+        <section class="deal">
+            <h2
+                style="text-align: center; font-size: 35px; font-weight: bold; font-weight: bold; color: #222222; font-family: monospace;position: relative; top: 100px; letter-spacing: 2px;">
+                Deals Of The Weeks</h2>
+            <section style="position: relative; top: 130px;">
+                <table>
+                    <tr>
+                        <th style=" width: 360px; height: 380px; position: relative; left: 110px;">
+                            <section class="table">
+                                <a href="#"><img src="img/evergreen4.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                                <section class="count" style="position: relative; left: 65px; bottom: 80px;">
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">DAY</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">HOUR</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">MIN</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">SEC</label>
+                                    </section>
+                                </section>
+                                <section style="position:relative; right: 20px; bottom: 60px;">
+                                    <span class="new" style="position: relative; left: 10px; bottom: 240px;">SALE</span>
+                                    <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category" style="position: relative; left: 7px;">Shohaku Bonsai
+                                    </h5>
+                                    <br>
+                                    <span class="price" style="color:#40A944;">Rs.999</span>
+                                    <del
+                                        style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.1999</del>
+                                </section>
+                            </section>
+                        </th>
+                        <th style="width: 360px; height: 380px; position: relative; left: 25px;">
+                            <section class="table">
+                                <span class="new" style="position: relative; bottom: 220px; left: 70px;">SALE</span>
+                                <a href="#"><img src="img/evergreen7.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                                <section class="count" style="position: relative; left: 90px; bottom: 80px;">
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">DAY</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">HOUR</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">MIN</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">SEC</label>
+                                    </section>
+                                </section>
+                                <section style="position: relative; left: 20px; bottom: 60px;">
+                                    <a href="#" class="bonsai-name" style="position:relative; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai
+                                    </h5>
+                                    <br>
+                                    <span class="price"
+                                        style="position: relative; right: 15px; color: #40A944;">Rs.1250</span>
+                                    <del
+                                        style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.2500</del>
+                                </section>
+                            </section>
+                        </th>
+                        <th style=" width: 360px; height: 380px; position: relative; right: 28px;">
+                            <section class="table">
+                                <span class="new" style="position: relative; left: 80px; bottom: 220px;">SALE</span>
+                                <a href="#"><img src="img/leaf1.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                                <section class="count" style="position: relative; left: 90px; bottom: 80px;">
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">DAY</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">HOUR</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">MIN</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">SEC</label>
+                                    </section>
+                                </section>
+                                <section style="position: relative; left: 30px; bottom: 60px;">
+                                    <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai
+                                    </h5>
+                                    <br>
+                                    <span class="price"
+                                        style="position: relative; right: 15px; color: #40A944;">Rs.2000</span>
+                                    <del
+                                        style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.4000</del>
+                                </section>
+                            </section>
+                        </th>
+                        <th style=" width: 360px; height: 380px; position: relative; right: 80px;">
+                            <section class="table">
+                                <span class="new" style="position: relative; left: 80px; bottom: 220px;">SALE</span>
+                                <a href="#"><img src="img/evergreen6.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                                <section class="count" style="position: relative; left: 90px; bottom: 80px;">
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">DAY</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">HOUR</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">MIN</label>
+                                    </section>
+                                    <section>
+                                        <input type="text" value="0" readonly class="time">
+                                        <br>
+                                        <label for="">SEC</label>
+                                    </section>
+                                </section>
+                                <section style="position: relative; bottom: 60px;">
+                                    <a href="#" class="bonsai-name"
+                                        style="position: relative; left: 23px; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category" style="position: relative; left: 6px;">Shohaku Bonsai
+                                    </h5>
+                                    <br>
+                                    <span class="price"
+                                        style="position: relative; left: 6px; color: #40A944;">Rs.1500</span>
+                                    <del
+                                        style="color: #929292; font-size: 16px; font-family: sans-serif; font-weight: 400; position: relative;left: 30px;">Rs.3000</del>
+                                </section>
+                            </section>
+                        </th>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <div style="background-color: #e6e6e6; width: 100%; height: 300px; position: relative; top: 230px;">
+            <figure>
+                <img src="img/offer.png" alt="bonsai"
+                    style="width: 500px; height: 500px; position: relative; left: 600px; bottom: 100px;">
+                <img src="img/banner.png" alt="bonsai"
+                    style="width: 550px; height: 300px; position: relative; left: 300px; bottom: 200px;">
+            </figure>
+            <div class="offer" style="position: relative; bottom: 450px; left: 200px; width: 400px; height: 240px;">
+                <h4
+                    style="color: #40A944; font-size: 15px; font-family: sans-serif; font-weight: 500; letter-spacing: 2px; position: relative; left: 13px;">
+                    HAPPY NEW YEAR !</h2>
+                    <h2
+                        style="font-size: 40px; font-weight: bold; font-family: monospace; letter-spacing: 2px; color: #222222; margin: 10px;">
+                        SALE 50% OFF </h2>
+                    <h3
+                        style="color:#4e4e4e; font-size: 25px; font-weight: 500; font-family:sans-serif; word-spacing: 10px; position: relative; left: 10px;">
+                        All BONSAI PRODUCTS</h3>
+                    <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="foot" style="width: 100%; height: 450px;">
             <div class="logo">

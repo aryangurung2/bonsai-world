@@ -32,9 +32,95 @@ nav ul li a{
   font-size: 16px;
   color: #222222;
 }
+nav ul li a:hover {
+  color: #40A944;
+}
 nav h3,
 p{
   color: #222222;
+}
+header {
+  position: relative;
+  bottom: 10px;
+  height: 170px;
+}
+
+.head {
+  position: relative;
+  top: 10px;
+}
+
+.logo {
+  width: 220px;
+  height: 100px;
+  position: relative;
+  left: 180px;
+  top: 50px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.logo h2 {
+  position: relative;
+  bottom: 50px;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  left: 64px;
+}
+
+.search-box {
+  width: 380px;
+  height: 50px;
+  position: relative;
+  left: 530px;
+  bottom: 40px;
+
+}
+
+.search-box input {
+  width: 350px;
+  height: 25px;
+  border: 1px solid #e6e6e6;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 5px;
+}
+
+.search {
+  width: 70px;
+  height: 47px;
+  background-color: #40A944;
+  border-style: none;
+  position: relative;
+  left: 386px;
+  bottom: 52px;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+.search:hover {
+  background-color: #222222;
+}
+
+.extra {
+  display: flex;
+  position: relative;
+  width: 25rem;
+  left: 66rem;
+  bottom: 68px;
+  cursor: pointer;
+}
+
+.register:hover {
+  color: #40A944;
 }
 .customer:hover{
   color: #40A944;
