@@ -19,11 +19,14 @@
             width: 80%;
             height: 900px;
         }
-        .bonsai-name {
+        .title{
             color: #222222;
             font-size: 28px;
             font-family: sans-serif;
             font-weight: 535;
+        }
+        .bonsai-name:hover{
+            color: #40A944;
         }
         .hover:hover{
             box-shadow: 0.1px 0.1px 8px 1px #616161;
@@ -31,8 +34,9 @@
         .description{
             font-family: sans-serif;
             color: #222222;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
+            line-height: 20px;
         }
         .Buy{
             background-color: #4071a9;
@@ -171,17 +175,17 @@
         <div class="cart">
             <img src="img/slide3.png" alt="evergreen-bonsai" class="product" style="position: relative; top: 60px; left: 30px; width: 600px; height: 600px;">
             <section style=" width: 450px; height: 410px; position: relative; left: 650px; bottom: 450px; border-bottom: 1px solid rgba(179, 179, 179, 0.313);">
-                <h2 class="bonsai-name">Apple Tree</h2>
-                <span class = "bonsai-name" style="font-size: 20px; font-weight: bold; position: relative; top: 30px;">Rs.4000</span>
+                <h2 class="title">Apple Tree</h2>
+                <span class = "title" style="font-size: 20px; font-weight: bold; position: relative; top: 30px;">Rs.4000</span>
                 <p class="description" style="position: relative; top: 70px;">Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt lores ta porro ame. Neque porro quisquam est, qui dolore ipsum quia dolor sit amet.</p>
                 <button class="Buy" type="submit" onclick="Buy()">Buy Now</button>
                 <button onclick="Cart()" class="Add" type="submit" style="display: inline; position: relative; left: 40px; padding: 10px 20px;">Add To Cart</button>
             </section>
             <div style="width: 950px; border-top: 1px solid rgba(189, 189, 189, 0.475); position: relative; bottom: 350px; left: 150px;">
                 <div style="width: 100px; height: 3px; background-color: #525252; margin-bottom: 20px;"></div>
-                <h2 class="bonsai-name">Description</h2>
+                <h2 class="bonsai-name"><b>Description</b></h2>
                 <br>
-                <p class="description">Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt lores ta porro ame. Neque porro quisquam est, qui dolore ipsum quia dolor sit amet</p>
+                <p class="description">An Apple tree bonsai is a miniature version of an apple tree grown in a small container using bonsai techniques such as pruning, wiring, and shaping to create a miniature replica of a full-sized tree. The fruit produced on an apple tree bonsai is often smaller than that of a full-sized tree but can still be eaten. It is a great choice for indoor or outdoor gardening and can be enjoyed for many years.</p>
             </div>
         </div>
         <div style="position: relative; top: 200px;">
@@ -190,9 +194,9 @@
                 <tr>
                     <th style="position: relative; left: 110px;" class="product-table">
                         <section class="table">
-                            <a href="#"><img src="img/evergreen2.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <a href="Buy.html"><img src="img/evergreen2.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
                             <section style="position:relative; right: 20px">
-                                <a href="#" class="bonsai-name"
+                                <a href="Buy.html" class="bonsai-name"
                                     style="position: relative; left: 16px; top: 20px;">Aleppo
                                     pine</a>
                                 <h5 class="bonsai-category">Shohaku Bonsai</h5>
@@ -204,9 +208,9 @@
                     <th style="position: relative; left: 40px;" class="product-table">
                         <section class="table">
                             <span class="new" style="position: relative; bottom: 230px; left: 70px;">NEW</span>
-                            <a href="#"><img src="img/flower1.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <a href="Buy.html"><img src="img/flower1.jpg" alt="evergreen-bonsai" class="product hover"></a>
                             <section style="position: relative; left: 20px;">
-                                <a href="#" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
+                                <a href="Buy.html" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
                                 <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
                                 <br>
                                 <span class="price" style="position: relative; right: 15px;">Rs.2500</span>
@@ -215,9 +219,9 @@
                     </th>
                     <th style="position: relative; left: 15px;" class="product-table">
                         <section class="table">
-                            <a href="#"><img src="img/leaf3.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <a href="Buy.html"><img src="img/leaf3.jpg" alt="evergreen-bonsai" class="product hover"></a>
                             <section>
-                                <a href="#" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
+                                <a href="Buy.html" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
                                 <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
                                 <br>
                                 <span class="price" style="position: relative; right: 15px;">Rs.4000</span>
@@ -228,9 +232,9 @@
                         <section class="table">
                             <span class="new"
                                 style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
-                            <a href="#"><img src="img/fruit3.jpg" alt="evergreen-bonsai" class="product hover"></a>
+                            <a href="Buy.html"><img src="img/fruit3.jpg" alt="evergreen-bonsai" class="product hover"></a>
                             <section>
-                                <a href="#" class="bonsai-name"
+                                <a href="Buy.html" class="bonsai-name"
                                     style="position: relative; left: 16px; top: 20px;">Aleppo
                                     pine</a>
                                 <h5 class="bonsai-category">Shohaku Bonsai</h5>
@@ -261,10 +265,10 @@
             <div class="quick-link">
                 <h3 class="footer-title">Quick link</h3>
                 <ul class="footer-quick">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="#">Research</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="About.html">About Us</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
