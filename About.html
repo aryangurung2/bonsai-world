@@ -25,7 +25,6 @@
             color: #222222;
             font-weight: bold;
             font-size: 45px;
-            position: relative;
             text-align: center;
             display: inline;
         }
@@ -68,24 +67,26 @@
 
         }
 
-        .member a h4 {
+        .member h4 {
             font: 15px;
             font-weight: bold;
             font-family: sans-serif;
-            position: relative;
-            left: 113px;
-            top: 15px;
+            margin: 15px 0 0 113px;
             text-decoration: none;
             color: #222222;
-            display: inline;
+            width: 100px;
         }
 
-        .member a {
+        .member h4 a {
             text-decoration: none;
+            color: #222222;
+
         }
-        .member a h4:hover{
+
+        .member h4 a:hover {
             color: #1f6a21;
         }
+
         .member .img-container img {
             width: 100%;
             border-radius: 50%;
@@ -103,9 +104,7 @@
         .icons {
             height: 40px;
             display: flex;
-            position: relative;
-            top: 40px;
-            left: 76px;
+            margin: 30px 0 0 76px;
 
         }
 
@@ -118,15 +117,17 @@
         .icons img {
             color: #40A944;
         }
-        .lead{
+
+        .lead {
             display: flex;
             justify-content: space-evenly;
-            width:800;
-            height: 500px;
+            width: 800;
+            height: 300px;
             margin: 50px auto;
             color: #222222;
         }
-        .description{
+
+        .description {
             /* border: 1px solid red; */
             position: relative;
             right: 40px;
@@ -138,6 +139,66 @@
             border-radius: 10px;
             color: #222222;
             background-color: #ffff;
+        }
+
+        .contact-us {
+            width: 80%;
+            height: 540px;
+            margin: 140px auto;
+            display: flex;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #666;
+            background-color: #ffff;
+
+        }
+
+        .contact-map {
+            width: 100%;
+            height: 100%;
+            flex: 50%;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .contact-form {
+            width: 100%;
+            height: 100%;
+            flex: 50%;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .text {
+            width: 100%;
+            height: 10px;
+            color: #000;
+            border: 1px solid #bcbcbc;
+            border-radius: 50px;
+            outline: none;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        form input:nth-child(5){
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            background-color: #40A944;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 0;
+            cursor: pointer;
+            font-size: 18px;
+            position: relative;
+            left: 15px;
+        }
+        form input:nth-child(5):hover{
+            background-color: #222222;
         }
     </style>
 </head>
@@ -211,9 +272,7 @@
                         <img src="img/pramit.jpg" alt="Pramit">
                     </div>
                     <h3>Pramit Ghah</h3>
-                    <a href="index.html">
-                        <h4>See More</h4>
-                    </a>
+                    <h4><a href="index.html">See More</a></h4>
                     <div class="icons">
                         <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
                         <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
@@ -226,9 +285,7 @@
                         <img src="img/Upama.jpg" alt="Pramit">
                     </div>
                     <h3>Upama Pokharel</h3>
-                    <a href="index.html">
-                        <h4>See More</h4>
-                    </a>
+                    <h4><a href="index.html">See More</a></h4>
                     <div class="icons">
                         <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
                         <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
@@ -241,9 +298,7 @@
                         <img src="img/ishan.jpg" alt="Pramit">
                     </div>
                     <h3>Ishan Shrestha</h3>
-                    <a href="index.html">
-                        <h4>See More</h4>
-                    </a>
+                    <h4><a href="index.html">See More</a></h4>
                     <div class="icons">
                         <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
                         <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
@@ -252,33 +307,140 @@
                 </div>
             </div>
             <div class="lead">
-            <div class="member" style="position: relative; left: 41px;">
-                <div class="img-container">
-                    <img src="img/Aryan1.jpg" alt="Aryan">
+                <div class="member" style="position: relative; left: 50px;">
+                    <div class="img-container">
+                        <img src="img/Aryan1.jpg" alt="Aryan">
+                    </div>
+                    <h3>Aryan Gurung</h3>
+                    <h4><a href="index.html">See More</a></h4>
+                    <div class="icons">
+                        <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    </div>
                 </div>
-                <h3>Aryan Gurung</h3>
-                <a href="index.html">
-                    <h4>See More</h4>
-                </a>
-                <div class="icons">
-                    <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
-                    <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
-                    <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
-                </div>
-            </div>
-            <div class="description">
-                <h2>Aryan Gurung</h2>
-                <h3 style=" font-weight: bold; 
+                <div class="description">
+                    <h2>Aryan Gurung</h2>
+                    <h3 style=" font-weight: bold; 
                 font-size: 18px; margin-top: 
                 10px; color: #222222; 
                 font-family: sans-serif;">Team Leader</h3>
-                <p style="font-size: 16px; margin-top: 
+                    <p style="font-size: 16px; margin-top: 
                 10px; color: #222222; 
-                font-family: sans-serif; line-height: 25px;">Motivated and ambitious person. Strong academic background with knowlege of HTML, CSS, JAVASCRIPT. proven ability to work effectively in teams and strong problem solving skills and eager to apply classroom knowledge to real world scenarios and gain hads on experience.</p>
+                font-family: sans-serif; line-height: 25px;">Motivated and ambitious person. Strong academic background
+                        with knowlege of HTML, CSS, JAVASCRIPT. proven ability to work effectively in teams and strong
+                        problem solving skills and eager to apply classroom knowledge to real world scenarios and gain
+                        hads on experience.</p>
+                </div>
             </div>
+        </div>
+        <div class="contact-us">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14129.247396417946!2d85.31648163080158!3d27.707656224666774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1674822773618!5m2!1sen!2snp"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form style="margin-top: 20px;" name="messageForm" onsubmit="validateForm()">
+                    <input type="text" name="name" placeholder="Name" class="text" />
+                    <input type="email" name="email" placeholder="Email" class="text" />
+                    <input type="text" name="number" placeholder="Number" class="text" />
+                    <textarea placeholder="Message" name="message" style="width: 100%;
+                        height: 130px;
+                        color: #000;
+                        border: 1px solid #bcbcbc;
+                        border-radius: 10px;
+                        outline: none;
+                        margin-bottom: 20px;
+                        padding: 15px;"></textarea>
+                    <input type="submit" name="Submit" />
+                </form>
             </div>
         </div>
     </main>
+    <footer>
+        <div style="height: 510px;">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <h2>Bonsai World</h2>
+            </div>
+            <div class="address">
+                <p
+                    style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 500px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px;">
+                    Bonsai World is a company that sells bonsai plants and supplies. We also offer educational resources
+                    on bonsai cultivation and design.</p>
+                <p class="footer-para"><span class="span">Address : </span> Kamal Pokhari, Kathmandu, Nepal</p>
+                <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
+                <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
+            </div>
+            <div class="quick-link">
+                <h3 class="footer-title">Quick link</h3>
+                <ul class="footer-quick">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter</h3>
+                <p
+                    style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 300px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px; position: relative; top: 10px;">
+                    Get updates by subscribe our weekly newsletter</p>
+
+                <input type="email" name="search" placeholder="Email address..." style=" width: 220px;
+                    height: 25px;
+                    border: 1px solid #e6e6e6;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    padding: 10px;
+                    padding-left: 30px;
+                    margin: 5px;
+                    position: relative;
+                    top: 10px;">
+                <button class="subscribe" type="submit">
+                    <h3
+                        style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 10px 5px 0;">
+                        subscribe</h3>
+                </button>
+
+            </div>
+            <div class="footer-payment">
+                <p
+                    style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 185px; top: 30px;line-height: 23px;">
+                    Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
+                </p>
+                <ul class="footer-quick"
+                    style="display: flex; justify-content: flex-end; position: relative; right: 100px; bottom: 47px;">
+                    <li><img src="img/cash1.png" alt="paymetn"></li>
+                    <li><img src="img/visa1.png" alt="payement"></li>
+                    <li><img src="img/master.png" alt="payement"></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function validateForm()
+        {
+            var name = document.forms["messageForm"] ["name"].value;
+            var email = document.forms["messageForm"] ["email"].value;
+            var number = document.forms["messageForm"] ["number"].value;
+            var messageDetails = document.forms["messageForm"] ["message"].value;
+            //alert(messageDetails);
+            if (name == "" || email == "" || number == "" || messageDetails == "")
+            {
+                alert("Empty fields are present!!! Please enter the values...")
+
+            }
+            else {
+                alert("Thank you for your feedback!!!")
+            }
+        }
+    </script>
 </body>
 
 </html>
