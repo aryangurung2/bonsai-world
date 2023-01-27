@@ -2,233 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" ">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title>About</title>
     <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
     <style>
-        header {
-            position: relative;
-            bottom: 10px;
-            height: 170px;
-        }
-
-        .head {
-            display: flex;
-            justify-content: center;
-            height: 170px;
-            width: 100%;
-
-        }
-
-        .logo {
-            height: 100px;
-            width: 220px;
-            margin-top: 50px;
-            padding-top: 20px;
-
-        }
-
-        .logo img {
-            width: 70px;
-            height: 70px;
-        }
-
-        .logo h2 {
-            position: relative;
-            bottom: 50px;
-            font-size: 20px;
-            font-family: monospace;
-            font-weight: bold;
-            left: 60px;
-        }
-
-        .logo a {
-            color: #000000;
-            text-decoration: none;
-        }
-
-        .logo a:hover {
-            color: #40A944;
-            text-decoration: none;
-        }
-
-        .content0 {
-            height: 100px;
-            width: 65%;
-            margin-top: 60px;
-        }
-
-        .text {
-            font-style: italic;
-            font-family: sans-serif, Arial, Helvetica;
-            position: relative;
-            word-spacing: 2px;
-            letter-spacing: 0.5px;
-            line-height: 1.6;
-
-
-        }
-
         .about {
-            display: flex;
-            justify-content: center;
+            width: 100%;
             height: 500px;
-            width: 100%;
-            background-color: #e6e6e6;
-        }
-
-        .content1 {
-            height: 50px;
-            width: 150px;
-            /* margin: 0px 50px 5px 50px; */
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        .content2 {
-            height: 300px;
-            width: auto;
-            float: left;
-            padding: 50px;
-            margin-top: 50px;
-            box-shadow: -6px 6px 6px #40A944;
-        }
-
-        .content2 h3 {
-            color: #767676;
-
-        }
-
-        .content3 {
-            height: 300px;
-            width: auto;
-            float: right;
-            padding: 50px;
-            padding-left: 20px;
-            margin-top: 50px;
-
-            box-shadow: 6px 6px 6px #40A944;
-        }
-
-        .content3 img {
-            width: auto;
-            height: 300px;
-
-        }
-
-        .aboutus {
-            height: 800px;
-            width: 100%;
-            /* background-color: yellow; */
-        }
-
-        .content4 {
             display: flex;
-            justify-content: center;
-            /*background-color: red;*/
-            height: 50px;
+            justify-content: space-evenly;
+            margin-top: 40px;
         }
 
-        .content4 h2 {
-            font-size: 26px;
+        h1,
+        h2 {
             font-family: monospace;
+            color: #222222;
+            font-weight: bold;
+            font-size: 45px;
+            position: relative;
+            text-align: center;
+            display: inline;
         }
 
-        .content5 {
-            height: 100px;
-            width: auto;
-            /*background-color: red;*/
-        }
+        .team {
+            width: 100%;
+            height: 800px;
+            margin-top: 200px;
 
-        .content5 p {
-            font-size: 18px;
-            font-family: sans-serif;
-            word-spacing: 1.5px;
-            padding: 5px 50px 5px 50px;
         }
 
         .profile {
-            height: 500px;
-            width: 95%;
-            padding: 20px;
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-evenly;
+            margin-top: 70px;
         }
 
-        .profile div {
-            margin: 20px;
-            float: left;
-            height: 400px;
+        .member {
             width: 300px;
-        }
-
-        /**
-            .profile1
-            {
-                float: left;
-                height: 300px;
-                width: 300px;
-            
-                
-            }
-
-            .profile2
-            {
-                float: left;
-                height: 300px;
-                width: 300px;
-                
-            }
-
-            .profile3
-            {
-                float: left;
-                height: 300px;
-                width: 300px;
-                
-            }
-
-            .profile4
-            {
-                float: left;
-                height: 300px;
-                width: 300px;
-                
-
-            }**/
-
-        .profileimg {
             height: 300px;
-            width: 300px;
-            border-radius: 50%;
+            /* border: 1px solid black; */
+            box-shadow: 0 0 39px rgba(0, 58, 20, 0.1);
+            border-radius: 10px;
+            color: #222222;
+            background-color: #ffff;
         }
 
-        .profile div .name {
-            max-height: 80px;
-            width: 300px;
-            /*background-color: red;*/
-            margin: 10px 0px 10px 0px;
-            padding-top: 10px;
-
-
-
+        .member:hover {
+            background: linear-gradient(#51b956, #53f758);
+            color: #ffffff;
         }
 
-        .profile h3 {
-            text-align: center;
+        .member h3 {
+            font-size: 16px;
             font-family: sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
 
         }
 
-        .profile h4 {
-            text-align: center;
-            font-family: cursive;
+        .member a h4 {
+            font: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            position: relative;
+            left: 113px;
+            top: 15px;
+            text-decoration: none;
+            color: #222222;
+            display: inline;
+        }
+
+        .member a {
+            text-decoration: none;
+        }
+        .member a h4:hover{
+            color: #1f6a21;
+        }
+        .member .img-container img {
+            width: 100%;
+            border-radius: 50%;
+            border: 5px solid #40A944;
+            width: 110px;
+            height: 110px;
+        }
+
+        .img-container {
+            width: 110px;
+            height: 110px;
+            margin: 20px auto;
+        }
+
+        .icons {
+            height: 40px;
+            display: flex;
+            position: relative;
+            top: 40px;
+            left: 76px;
+
+        }
+
+        .icons img {
+            width: 30px;
+            height: 30px;
+            margin: 5px 10px;
+        }
+
+        .icons img {
+            color: #40A944;
+        }
+        .lead{
+            display: flex;
+            justify-content: space-evenly;
+            width:800;
+            height: 500px;
+            margin: 50px auto;
+            color: #222222;
+        }
+        .description{
+            /* border: 1px solid red; */
+            position: relative;
+            right: 40px;
+            width: 800px;
+            height: 200px;
+            padding: 50px;
+            /* border: 1px solid black; */
+            box-shadow: 0 0 39px rgba(0, 58, 20, 0.1);
+            border-radius: 10px;
+            color: #222222;
+            background-color: #ffff;
         }
     </style>
 </head>
@@ -237,11 +146,11 @@
     <header id="header">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="#">Research</a></li>
-                <li><a href="#">About Us</a></li>
                 <li><a href="#">Blog</a></li>
+                <li><a href="About.html">About Us</a></li>
             </ul>
             <div style="position:relative; left:80%; bottom: 33%; width: 150px; cursor: pointer;">
                 <img src="img/customer.png" alt="customer-logo"
@@ -254,144 +163,122 @@
                     Customer Support</p>
             </div>
         </nav>
-        <div class="head">
+        <div class="head" style="height: 150px;">
             <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="logo" id="logo">
-                    <h2>Bonsai World</h2>
-                </a>
+                <img src="img/logo.png" alt="logo" id="logo">
+                <h2>Bonsai World</h2>
             </div>
-            <div class="content0">
-                <h2 class="text"
-                    style="font-size: 22px; padding: 30px 40px 0px 80px; font-family: monospace; text-align: center;">
-                    Welcome to Bonsai World! A place to create yout own bonsai..</h2><br>
+
+            <div class="search-box">
+                <input type="text" name="search" placeholder="Search here...">
+                <button class="search">
+                    <img src="img/search.png" alt="search" width="30px" height="30px">
+                </button>
+            </div>
+            <div class="extra">
+                <h3
+                    style="font-family:sans-serif; font-size: 16px; font-weight: lighter; color: #222222; letter-spacing: 2px;">
+                    <span class="register">Register</span> / <span class="register
+                ">Login</span>
+                </h3>
+                <img src="img/heart.png" alt="bookmark"
+                    style="width: 70px; height: 70px; position: relative; bottom: 25px;">
+                <img src="img/cart.png" alt="cart" style="width: 70px; height: 70px; position: relative; bottom: 25px;">
             </div>
         </div>
     </header>
     <main>
         <div class="about">
-            <div class="content2">
-                <h2 class="text">Vision</h2><br>
-                <h3 class="text">Extending greenery of mother land with a small step.</h3>
-                <br>
-                <br>
-                <h2 class="text">Mission</h2><br>
-                <h3 class="text">To create and provide inclusive bonsai.</h3>
-
-            </div>
-            <div class="content3">
-                <img src="img/bonsai2.jpg" alt="img">
-            </div>
+            <section style="height: 450px; width: 550px;">
+                <h1>About Us</h1>
+                <p
+                    style="margin-top: 20px; font-size: 18px; font-family: sans-serif; color: #222222; letter-spacing: 2px; line-height: 27px;">
+                    Welcome to our bonsai world, where you may choose from a huge selection of top-notch bonsai trees.
+                    We have been in the bonsai industry for more than 3 years and are passionate about these little
+                    plants. Each tree is manually chosen by our experienced staff to make sure we are only selling the
+                    greatest specimens. To assist our clients in maintaining the health and beauty of their bonsai
+                    plants, we also offer thorough care instructions. We are here to assist you in finding the ideal
+                    tree for your requirements, whether you are an experienced bonsai enthusiast or are new to the
+                    hobby. We appreciate you making us your go-to bonsai supplier.</p>
+            </section>
+            <img src="img/about.png" alt="Making bonsai" style="width: 700px; height: 450px;">
         </div>
-        <div class="aboutus">
-            <div class="content4">
-                <h2>About Us</h2>
-            </div>
-            <div class="content5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum ex voluptates magni atque nam
-                    iste, animi numquam corporis molestiae itaque quisquam aliquid accusantium, non consequuntur qui
-                    culpa obcaecati praesentium.</p>
-            </div>
+        <div class="team">
+            <h2 style="font-size: 35px; display: block; margin-top: 100px;">Our Teams</h2>
             <div class="profile">
-                <div class="profile1">
-                    <a href="#"><img src="img/evergreen1.jpg" alt="pic" class="profileimg">
-                        <div class="name">
-                            <h3>Aryan Gurung</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </div>
+                <div class="member">
+                    <div class="img-container">
+                        <img src="img/pramit.jpg" alt="Pramit">
+                    </div>
+                    <h3>Pramit Ghah</h3>
+                    <a href="index.html">
+                        <h4>See More</h4>
                     </a>
+                    <div class="icons">
+                        <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+
+                    </div>
                 </div>
-                <div class="profile2">
-                    <a href="#"><img src="#" alt="pic" class="profileimg">
-                        <div class="name">
-                            <h3>Ishwor Shrestha</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </div>
+                <div class="member">
+                    <div class="img-container">
+                        <img src="img/Upama.jpg" alt="Pramit">
+                    </div>
+                    <h3>Upama Pokharel</h3>
+                    <a href="index.html">
+                        <h4>See More</h4>
                     </a>
+                    <div class="icons">
+                        <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+
+                    </div>
                 </div>
-                <div class="profile3">
-                    <a href="#"><img src="#" alt="pic" class="profileimg">
-                        <div class="name">
-                            <h3>Pramit Gaha</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </div>
+                <div class="member">
+                    <div class="img-container">
+                        <img src="img/ishan.jpg" alt="Pramit">
+                    </div>
+                    <h3>Ishan Shrestha</h3>
+                    <a href="index.html">
+                        <h4>See More</h4>
                     </a>
-                </div>
-                <div class="profile4">
-                    <a href="#"><img src="#" alt="pic" class="profileimg">
-                        <div class="name">
-                            <h3>Upama Pokharel</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </div>
-                    </a>
+                    <div class="icons">
+                        <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    </div>
                 </div>
             </div>
-
+            <div class="lead">
+            <div class="member" style="position: relative; left: 41px;">
+                <div class="img-container">
+                    <img src="img/Aryan1.jpg" alt="Aryan">
+                </div>
+                <h3>Aryan Gurung</h3>
+                <a href="index.html">
+                    <h4>See More</h4>
+                </a>
+                <div class="icons">
+                    <a href="#"><img src="img/facebook.svg" alt="facebook logo"></a>
+                    <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+                </div>
+            </div>
+            <div class="description">
+                <h2>Aryan Gurung</h2>
+                <h3 style=" font-weight: bold; 
+                font-size: 18px; margin-top: 
+                10px; color: #222222; 
+                font-family: sans-serif;">Team Leader</h3>
+                <p style="font-size: 16px; margin-top: 
+                10px; color: #222222; 
+                font-family: sans-serif; line-height: 25px;">Motivated and ambitious person. Strong academic background with knowlege of HTML, CSS, JAVASCRIPT. proven ability to work effectively in teams and strong problem solving skills and eager to apply classroom knowledge to real world scenarios and gain hads on experience.</p>
+            </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="foot" style="width: 100%; height: 450px;">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo" id="logo">
-                <h2>Bonsai World</h2>
-            </div>
-            <div class="address">
-                <p
-                    style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 500px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px;">
-                    Bonsai World is a company that sells bonsai plants and supplies. We also offer educational resources
-                    on bonsai cultivation and design.</p>
-                <p class="footer-para"><span class="span">Address : </span> Kamal Pokhari, Kathmandu, Nepal</p>
-                <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
-                <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
-            </div>
-            <div class="quick-link">
-                <h3 class="footer-title">Quick link</h3>
-                <ul class="footer-quick">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter</h3>
-                <p
-                    style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 300px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px; position: relative; top: 10px;">
-                    Get updates by subscribe our weekly newsletter</p>
-
-                <input type="email" name="search" placeholder="Email address..." style=" width: 220px;
-                        height: 25px;
-                        border: 1px solid #e6e6e6;
-                        border-top-left-radius: 20px;
-                        border-bottom-left-radius: 20px;
-                        padding: 10px;
-                        padding-left: 30px;
-                        margin: 5px;
-                        position: relative;
-                        top: 10px;">
-                <button class="subscribe" type="submit">
-                    <h3
-                        style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 10px 5px 0;">
-                        subscribe</h3>
-                </button>
-
-            </div>
-            <div class="footer-payment">
-                <p
-                    style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 185px; top: 30px;line-height: 23px;">
-                    Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
-                </p>
-                <ul class="footer-quick"
-                    style="display: flex; justify-content: flex-end; position: relative; right: 100px; bottom: 47px;">
-                    <li><img src="img/cash1.png" alt="paymetn"></li>
-                    <li><img src="img/visa1.png" alt="payement"></li>
-                    <li><img src="img/master.png" alt="payement"></li>
-                </ul>
-
-            </div>
-        </div>
-
-    </footer>
 </body>
 
 </html>
