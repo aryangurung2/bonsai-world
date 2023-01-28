@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Research</title>
     <style>
-        .visited:hover{
+        .visited:hover {
             color: #40A944;
+        }
+        .compare{
+            width: 92%;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin-top: 150px;
+            position: relative;
+            left: 65px;
+        }
+        .compare h3{
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            color: #222222;
+            display: inline;
+            margin-bottom: 400px;
+
+        }
+        .compare img{
+            width: 600px;
+            height: 300px;
+            position: relative;
+            margin-top: 50px;
         }
     </style>
 </head>
+
 <body>
     <header id="header">
         <nav>
@@ -60,5 +85,30 @@
             </div>
         </div>
     </header>
+    <main>
+        <h1 style="font-size: 30px; font-family: monospace; font-weight: bold; text-align: center; margin-top: 30px;">Comparing Website "Bonsai World" with other websites</h1>
+        <div class="compare">
+            <h3>1. Comparing with flipkart.com</h3>
+            <figure>
+                <img src="img/bonsaiworldfront.png" alt="bonsai world">
+                <a href=""><img src="img/flipcart.png" alt="flipkart" style="position: relative; left: 90px; width: 700px;"><a>
+            </figure>
+            <div class="compare-detail">
+                <table>
+                    <tr>
+                        <th>Features</th>
+                        <th>Bonsai World</th>
+                        <th>Flipcart</th>
+                    </tr>
+                    <tr>
+                        <td>Color Theme</td>
+                        <td>Light green, black, white</td>
+                        <td>Blue, yellow, white, Black</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
