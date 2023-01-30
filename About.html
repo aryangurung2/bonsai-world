@@ -58,6 +58,7 @@
         .member:hover {
             background: linear-gradient(#51b956, #53f758);
             color: #ffffff;
+            transition-duration: 350ms;
         }
 
         .member h3 {
@@ -87,6 +88,7 @@
 
         .member h4 a:hover {
             color: #1f6a21;
+            transition-duration: 350ms;
         }
 
         .member .img-container img {
@@ -201,6 +203,7 @@
         }
         form input:nth-child(5):hover{
             background-color: #222222;
+            transition-duration: 350ms;
         }
     </style>
 </head>
@@ -234,7 +237,7 @@
 
             <div class="search-box">
                 <input type="text" name="search" placeholder="Search here...">
-                <button class="search">
+                <button class="search" onclick="search()">
                     <img src="img/search.png" alt="search" width="30px" height="30px">
                 </button>
             </div>
@@ -443,6 +446,7 @@
             }
         }
     </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

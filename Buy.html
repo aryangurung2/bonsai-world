@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="style.css">
     <title>Buy Now</title>
     <style>
+        .visited{
+            color: #40A944;
+        }
+        .goback a{
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #222222;
+            /* font-weight: bold; */
+            position: relative;
+            left: 165px;
+            top: 15px;
+            display: inline;
+            text-decoration: none;
+        }
+        .goback a:hover{
+            color: #40A944;
+            transition-duration: 300ms;
+        }
         .cart{
             position: relative;
             top: 30px;
@@ -27,9 +45,11 @@
         }
         .bonsai-name:hover{
             color: #40A944;
+            transition-duration: 350ms;
         }
         .hover:hover{
             box-shadow: 0.1px 0.1px 8px 1px #616161;
+            transition-duration: 350ms;
         }
         .description{
             font-family: sans-serif;
@@ -67,9 +87,11 @@
         }
         .Add:hover{
             background-color: #222222;
+            transition-duration: 350ms;
         }
         .Buy:hover{
             background-color: #222222;
+            transition-duration: 350ms;
         }
         .table {
             width: 360px;
@@ -130,7 +152,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html" class="visited">Products</a></li>
                 <li><a href="Research.html">Research</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="About.html">About Us</a></li>
@@ -154,7 +176,7 @@
 
             <div class="search-box">
                 <input type="text" name="search" placeholder="Search here...">
-                <button class="search">
+                <button class="search" onclick="search()">
                     <img src="img/search.png" alt="search" width="30px" height="30px">
                 </button>
             </div>
@@ -171,6 +193,7 @@
         </div>
     </header>
     <main>
+        <p class="goback"><a href="products.html">&larr; Go back</a></p>
         <div class="cart">
             <img src="img/slide3.png" alt="evergreen-bonsai" class="product" style="position: relative; top: 60px; left: 30px; width: 600px; height: 600px;">
             <section style=" width: 450px; height: 410px; position: relative; left: 650px; bottom: 450px; border-bottom: 1px solid rgba(179, 179, 179, 0.313);">
@@ -319,5 +342,6 @@
             alert("Your item has been added to cart");
         }
     </script>
+    <script src="main.js"></script>
 </body>
 </html>

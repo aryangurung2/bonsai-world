@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="style.css">
     <title>Aryan Gurung CV</title>
     <style>
+        .visited-protfolio{
+            color: #40A944;
+        }
+        .goback a{
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #222222;
+            /* font-weight: bold; */
+            position: relative;
+            left:308px;
+            top: 15px;
+            display: inline;
+            text-decoration: none;
+        }
+        .goback a:hover{
+            color: #40A944;
+            transition-duration: 300ms;
+        }
         .profile {
             width: 65%;
             height: 100%;
@@ -154,7 +172,7 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="Research.html">Research</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a href="About.html">About Us</a></li>
+                <li><a href="About.html" class="visited-protfolio">About Us</a></li>
             </ul>
             <div style="position:relative; left:80%; bottom: 33%; width: 150px; cursor: pointer;">
                 <img src="img/customer.png" alt="customer-logo"
@@ -175,7 +193,7 @@
 
             <div class="search-box">
                 <input type="text" name="search" placeholder="Search here...">
-                <button class="search">
+                <button class="search" onclick="search()">
                     <img src="img/search.png" alt="search" width="30px" height="30px">
                 </button>
             </div>
@@ -192,6 +210,7 @@
         </div>
     </header>
     <main>
+        <p class="goback"><a href="About.html">&larr; Go back</a></p>
         <div style="width: 100%; height: 100%; display: flex;">
             <div class="profile">
                 <div style="width: 300px; height: 100%; background-color: #373D48;">
@@ -549,6 +568,7 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
