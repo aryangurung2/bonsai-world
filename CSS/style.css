@@ -1,29 +1,36 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   background-color: rgb(243, 242, 242);
   height: 100%;
 }
-nav{
+
+nav {
   width: 100%;
   position: fixed;
   z-index: 3;
   background-color: rgb(244, 241, 241);
   height: 60px;
 }
-nav ul{
+
+nav ul {
   display: flex;
+  /* border: 1px solid red; */
+  /* width: 00px; */
   justify-content: center;
-  
+
 }
-nav ul li{
+
+nav ul li {
   list-style: none;
   width: 100px;
   padding-top: 28px;
 }
-nav ul li a{
+
+nav ul li a {
   text-decoration: none;
   padding: 5px;
   margin: 5px;
@@ -33,20 +40,24 @@ nav ul li a{
   font-size: 16px;
   color: #222222;
 }
-nav ul li:nth-child(1){
+
+nav ul li:nth-child(1) {
   width: 75px;
 }
-nav ul li:nth-child(4){
+
+nav ul li:nth-child(4) {
   width: 65px;
 }
 
 nav ul li a:hover {
   color: #40A944;
 }
+
 nav h3,
-p{
+p {
   color: #222222;
 }
+
 header {
   position: relative;
   bottom: 10px;
@@ -55,15 +66,16 @@ header {
 
 .head {
   position: relative;
-  top: 10px;
+  top: 60px;
+  height: 180px;
 }
 
 .logo {
   width: 220px;
   height: 100px;
   position: relative;
-  left: 180px;
-  top: 50px;
+  left: 11%;
+  top: 18px;
 }
 
 .logo img {
@@ -84,8 +96,8 @@ header {
   width: 380px;
   height: 50px;
   position: relative;
-  left: 530px;
-  bottom: 40px;
+  left: 35%;
+  bottom: 72px;
 
 }
 
@@ -121,16 +133,18 @@ header {
 .extra {
   display: flex;
   position: relative;
-  width: 25rem;
-  left: 66rem;
-  bottom: 68px;
+  width: 336px;
+  left: 71%;
+  bottom: 100px;
   cursor: pointer;
 }
+
 
 .register:hover {
   color: #40A944;
 }
-.customer:hover{
+
+.customer:hover {
   color: #40A944;
 }
 
@@ -147,7 +161,7 @@ footer {
   top: 40px;
   width: 500px;
   height: 200px;
-  left: 180px;
+  left: 170px;
 }
 
 .footer-para {
@@ -170,7 +184,7 @@ footer {
   width: 100px;
   height: 260px;
   position: relative;
-  left: 55%;
+  left: 50%;
   bottom: 230px;
 }
 
@@ -200,7 +214,7 @@ footer {
 .newsletter {
   /* border: 1px solid red; */
   position: relative;
-  left: 70%;
+  left: 68%;
   width: 400px;
   height: 300px;
   bottom: 480px;
