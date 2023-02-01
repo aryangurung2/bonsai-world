@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,11 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Buy Now</title>
     <style>
-        .visited{
+        .visited {
             color: #40A944;
         }
-        .goback a{
+
+        .goback a {
             font-size: 18px;
             font-family: sans-serif;
             color: #222222;
@@ -24,11 +26,13 @@
             display: inline;
             text-decoration: none;
         }
-        .goback a:hover{
+
+        .goback a:hover {
             color: #40A944;
             transition-duration: 300ms;
         }
-        .cart{
+
+        .cart {
             position: relative;
             top: 30px;
             letter-spacing: 3px;
@@ -37,28 +41,33 @@
             width: 80%;
             height: 900px;
         }
-        .title{
+
+        .title {
             color: #222222;
             font-size: 28px;
             font-family: sans-serif;
             font-weight: 535;
         }
-        .bonsai-name:hover{
+
+        .bonsai-name:hover {
             color: #40A944;
             transition-duration: 350ms;
         }
-        .hover:hover{
+
+        .hover:hover {
             box-shadow: 0.1px 0.1px 8px 1px #616161;
             transition-duration: 350ms;
         }
-        .description{
+
+        .description {
             font-family: sans-serif;
             color: #222222;
             font-size: 16px;
             /* font-weight: 500; */
             line-height: 18px;
         }
-        .Buy{
+
+        .Buy {
             background-color: #4071a9;
             border: none;
             border-radius: 10px 10px;
@@ -72,7 +81,8 @@
             top: 150px;
             cursor: pointer;
         }
-        .Add{
+
+        .Add {
             background-color: #40A944;
             border: none;
             border-radius: 10px 10px;
@@ -85,14 +95,17 @@
             top: 150px;
             cursor: pointer;
         }
-        .Add:hover{
+
+        .Add:hover {
             background-color: #222222;
             transition-duration: 350ms;
         }
-        .Buy:hover{
+
+        .Buy:hover {
             background-color: #222222;
             transition-duration: 350ms;
         }
+
         .table {
             width: 360px;
             height: 380px;
@@ -147,201 +160,228 @@
         }
     </style>
 </head>
+
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="products.html" class="visited">Products</a></li>
-                <li><a href="Research.html">Research</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="About.html">About Us</a></li>
-            </ul>
-            <div style="position:relative; left:80%; bottom: 33%; width: 150px; cursor: pointer;">
-                <img src="../img/customer.png" alt="customer-logo"
-                    style="width: 25px; height: 25px; position: relative; right: 10px;bottom: 2px;">
-                <h3 class="customer"
-                    style="display: inline; font-size: 16px; font-family:sans-serif; font-weight: lighter; letter-spacing: 2px; position: relative; bottom: 13px;">
-                    01-3457802</h3>
-                <p class="customer"
-                    style="font-size: 10px; font-weight: lighter; font-family: monospace; position: relative; left: 40px; bottom: 15px;">
-                    Customer Support</p>
-            </div>
-        </nav>
-        <div class="head" style="height: 150px;">
-            <div class="logo">
-                <img src="../img/logo.png" alt="logo" id="logo">
-                <h2>Bonsai World</h2>
-            </div>
-
-            <div class="search-box">
-                <input type="text" name="search" placeholder="Search here...">
-                <button class="search" onclick="search()">
-                    <img src="../img/search.png" alt="search" width="30px" height="30px">
-                </button>
-            </div>
-            <div class="extra">
-                <h3
-                    style="font-family:sans-serif; font-size: 16px; font-weight: lighter; color: #222222; letter-spacing: 2px;">
-                    <span class="register">Register</span> / <span class="register
-                ">Login</span>
-                </h3>
-                <img src="../img/heart.png" alt="bookmark"
-                    style="width: 70px; height: 70px; position: relative; bottom: 25px;">
-                <img src="../img/cart.png" alt="cart" style="width: 70px; height: 70px; position: relative; bottom: 25px;">
-            </div>
-        </div>
-    </header>
-    <main>
-        <p class="goback"><a href="products.html">&larr; Go back</a></p>
-        <div class="cart">
-            <img src="../img/slide3.png" alt="evergreen-bonsai" class="product" style="position: relative; top: 60px; left: 30px; width: 600px; height: 600px;">
-            <section style=" width: 450px; height: 410px; position: relative; left: 650px; bottom: 450px; border-bottom: 1px solid rgba(179, 179, 179, 0.313);">
-                <h2 class="title">Apple Tree</h2>
-                <span class = "title" style="font-size: 20px; font-weight: bold; position: relative; top: 30px;">Rs.4000</span>
-                <p class="description" style="position: relative; top: 70px;">Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt lores ta porro ame. Neque porro quisquam est, qui dolore ipsum quia dolor sit amet.</p>
-                <button class="Buy" type="submit" onclick="Buy()">Buy Now</button>
-                <button onclick="Cart()" class="Add" type="submit" style="display: inline; position: relative; left: 40px; padding: 15px 20px;">Add To Cart</button>
-            </section>
-            <div style="width: 950px; border-top: 1px solid rgba(189, 189, 189, 0.475); position: relative; bottom: 350px; left: 150px;">
-                <div style="width: 100px; height: 3px; background-color: #525252; margin-bottom: 20px;"></div>
-                <h2 class="bonsai-name"><b>Description</b></h2>
-                <br>
-                <p class="description">An Apple tree bonsai is a miniature version of an apple tree grown in a small container using bonsai techniques such as pruning, wiring, and shaping to create a miniature replica of a full-sized tree. The fruit produced on an apple tree bonsai is often smaller than that of a full-sized tree but can still be eaten. It is a great choice for indoor or outdoor gardening and can be enjoyed for many years.</p>
-            </div>
-        </div>
-        <div style="margin-top: 200px;">
-            <h2 style="text-align: center; font-size: 35px; color: #222222; font-weight: bold; font-family:monospace; letter-spacing: 1px; margin-bottom: 40px;">Related Products</h2>
-            <table>
-                <tr>
-                    <th style="position: relative; left: 110px;" class="product-table">
-                        <section class="table">
-                            <a href="Buy.html"><img src="../img/evergreen2.0.jpg" alt="evergreen-bonsai" class="product hover"></a>
-                            <section style="position:relative; right: 20px">
-                                <a href="Buy.html" class="bonsai-name"
-                                    style="position: relative; left: 16px; top: 20px;">Aleppo
-                                    pine</a>
-                                <h5 class="bonsai-category">Shohaku Bonsai</h5>
-                                <br>
-                                <span class="price">Rs.1800</span>
-                            </section>
-                        </section>
-                    </th>
-                    <th style="position: relative; left: 40px;" class="product-table">
-                        <section class="table">
-                            <span class="new" style="position: relative; bottom: 230px; left: 70px;">NEW</span>
-                            <a href="Buy.html"><img src="../img/flower1.jpg" alt="evergreen-bonsai" class="product hover"></a>
-                            <section style="position: relative; left: 20px;">
-                                <a href="Buy.html" class="bonsai-name" style="position:relative; top: 20px;">Aleppo pine</a>
-                                <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
-                                <br>
-                                <span class="price" style="position: relative; right: 15px;">Rs.2500</span>
-                            </section>
-                        </section>
-                    </th>
-                    <th style="position: relative; left: 15px;" class="product-table">
-                        <section class="table">
-                            <a href="Buy.html"><img src="../img/leaf3.jpg" alt="evergreen-bonsai" class="product hover"></a>
-                            <section>
-                                <a href="Buy.html" class="bonsai-name" style="position: relative; top: 20px;">Aleppo pine</a>
-                                <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai</h5>
-                                <br>
-                                <span class="price" style="position: relative; right: 15px;">Rs.4000</span>
-                            </section>
-                        </section>
-                    </th>
-                    <th style="position: relative; right: 60px;" class="product-table">
-                        <section class="table">
-                            <span class="new"
-                                style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
-                            <a href="Buy.html"><img src="../img/fruit3.jpg" alt="evergreen-bonsai" class="product hover"></a>
-                            <section>
-                                <a href="Buy.html" class="bonsai-name"
-                                    style="position: relative; left: 16px; top: 20px;">Aleppo
-                                    pine</a>
-                                <h5 class="bonsai-category">Shohaku Bonsai</h5>
-                                <br>
-                                <span class="price">Rs.2100</span>
-                            </section>
-                        </section>
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </main>
-    <footer>
-        <div style="height: 510px;">
-            <div class="logo">
-                <img src="../img/logo.png" alt="logo" id="logo">
-                <h2>Bonsai World</h2>
-            </div>
-            <div class="address">
-                <p
-                    style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 500px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px;">
-                    Bonsai World is a company that sells bonsai plants and supplies. We also offer educational resources
-                    on bonsai cultivation and design.</p>
-                <p class="footer-para"><span class="span">Address : </span> Kamal Pokhari, Kathmandu, Nepal</p>
-                <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
-                <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
-            </div>
-            <div class="quick-link">
-                <h3 class="footer-title">Quick link</h3>
-                <ul class="footer-quick">
+    <div style="width: 100%;">
+        <header id="header">
+            <nav>
+                <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="products.html" class="visited">Products</a></li>
                     <li><a href="Research.html">Research</a></li>
-                    <li><a href="About.html">About Us</a></li>
                     <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About.html" >About Us</a></li>
                 </ul>
-            </div>
-            <div class="newsletter">
-                <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter</h3>
-                <p
-                    style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 300px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px; position: relative; top: 10px;">
-                    Get updates by subscribe our weekly newsletter</p>
+                <div style="position:relative; left:75%; bottom: 35%; width: 150px; height: 30px; cursor: pointer;">
+                    <img src="../img/customer.png" alt="customer-logo"
+                        style="width: 25px; height: 25px; position: relative; right: 10px;bottom: 3px;">
+                    <h3 class="customer"
+                        style="display: inline; font-size: 16px; font-family:sans-serif; font-weight: lighter; letter-spacing: 2px; position: relative; bottom: 14px;">
+                        01-3457802</h3>
+                    <p class="customer"
+                        style="font-size: 10px; font-weight: lighter; font-family: monospace; position: relative; left: 40px; bottom: 16px;">
+                        Customer Support</p>
+                </div>
+            </nav>
+            <div class="head" style="height: 150px;">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="logo" id="logo">
+                    <h2>Bonsai World</h2>
+                </div>
 
-                <input type="email" name="search" placeholder="Email address..." style=" width: 220px;
-                    height: 25px;
-                    border: 1px solid #e6e6e6;
-                    border-top-left-radius: 20px;
-                    border-bottom-left-radius: 20px;
-                    padding: 10px;
-                    padding-left: 30px;
-                    margin: 5px;
-                    position: relative;
-                    top: 10px;">
-                <button class="subscribe" type="submit" onclick="subscribe()">
+                <div class="search-box">
+                    <input type="text" name="search" placeholder="Search here...">
+                    <button class="search" onclick="search()">
+                        <img src="../img/search.png" alt="search" width="30px" height="30px">
+                    </button>
+                </div>
+                <div class="extra">
                     <h3
-                        style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 10px 5px 0;">
-                        subscribe</h3>
-                </button>
-
+                        style="font-family:sans-serif; font-size: 16px; font-weight: lighter; color: #222222; letter-spacing: 2px;">
+                        <span class="register">Register</span> / <span class="register
+        ">Login</span>
+                    </h3>
+                    <img src="../img/heart.png" alt="bookmark"
+                        style="width: 70px; height: 70px; position: relative; bottom: 25px;">
+                    <img src="../img/cart.png" alt="cart"
+                        style="width: 70px; height: 70px; position: relative; bottom: 25px;">
+                </div>
             </div>
-            <div class="footer-payment">
-                <p
-                    style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 185px; top: 30px;line-height: 23px;">
-                    Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
-                </p>
-                <ul class="footer-quick"
-                    style="display: flex; justify-content: flex-end; position: relative; right: 100px; bottom: 47px;">
-                    <li><img src="../img/cash1.png" alt="paymetn"></li>
-                    <li><img src="../img/visa1.png" alt="payement"></li>
-                    <li><img src="../img/master.png" alt="payement"></li>
-                </ul>
-
+        </header>
+        <main>
+            <p class="goback"><a href="products.html">&larr; Go back</a></p>
+            <div class="cart">
+                <img src="../img/slide3.png" alt="evergreen-bonsai" class="product"
+                    style="position: relative; top: 60px; left: 30px; width: 600px; height: 600px;">
+                <section
+                    style=" width: 450px; height: 410px; position: relative; left: 650px; bottom: 450px; border-bottom: 1px solid rgba(179, 179, 179, 0.313);">
+                    <h2 class="title">Apple Tree</h2>
+                    <span class="title"
+                        style="font-size: 20px; font-weight: bold; position: relative; top: 30px;">Rs.4000</span>
+                    <p class="description" style="position: relative; top: 70px;">Neque porro quisquam est, qui dolore
+                        ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora
+                        incidunt lores ta porro ame. Neque porro quisquam est, qui dolore ipsum quia dolor sit amet.</p>
+                    <button class="Buy" type="submit" onclick="Buy()">Buy Now</button>
+                    <button onclick="Cart()" class="Add" type="submit"
+                        style="display: inline; position: relative; left: 40px; padding: 15px 20px;">Add To
+                        Cart</button>
+                </section>
+                <div
+                    style="width: 950px; border-top: 1px solid rgba(189, 189, 189, 0.475); position: relative; bottom: 350px; left: 150px;">
+                    <div style="width: 100px; height: 3px; background-color: #525252; margin-bottom: 20px;"></div>
+                    <h2 class="bonsai-name"><b>Description</b></h2>
+                    <br>
+                    <p class="description">An Apple tree bonsai is a miniature version of an apple tree grown in a small
+                        container using bonsai techniques such as pruning, wiring, and shaping to create a miniature
+                        replica of a full-sized tree. The fruit produced on an apple tree bonsai is often smaller than
+                        that of a full-sized tree but can still be eaten. It is a great choice for indoor or outdoor
+                        gardening and can be enjoyed for many years.</p>
+                </div>
             </div>
-        </div>
-    </footer>
+            <div style="margin-top: 200px;">
+                <h2
+                    style="text-align: center; font-size: 35px; color: #222222; font-weight: bold; font-family:monospace; letter-spacing: 1px; margin-bottom: 40px;">
+                    Related Products</h2>
+                <table>
+                    <tr>
+                        <th style="position: relative; left: 110px;" class="product-table">
+                            <section class="table">
+                                <a href="Buy.html"><img src="../img/evergreen2.0.jpg" alt="evergreen-bonsai"
+                                        class="product hover"></a>
+                                <section style="position:relative; right: 20px">
+                                    <a href="Buy.html" class="bonsai-name"
+                                        style="position: relative; left: 16px; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category">Shohaku Bonsai</h5>
+                                    <br>
+                                    <span class="price">Rs.1800</span>
+                                </section>
+                            </section>
+                        </th>
+                        <th style="position: relative; left: 40px;" class="product-table">
+                            <section class="table">
+                                <span class="new" style="position: relative; bottom: 230px; left: 70px;">NEW</span>
+                                <a href="Buy.html"><img src="../img/flower1.jpg" alt="evergreen-bonsai"
+                                        class="product hover"></a>
+                                <section style="position: relative; left: 20px;">
+                                    <a href="Buy.html" class="bonsai-name" style="position:relative; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai
+                                    </h5>
+                                    <br>
+                                    <span class="price" style="position: relative; right: 15px;">Rs.2500</span>
+                                </section>
+                            </section>
+                        </th>
+                        <th style="position: relative; left: 15px;" class="product-table">
+                            <section class="table">
+                                <a href="Buy.html"><img src="../img/leaf3.jpg" alt="evergreen-bonsai"
+                                        class="product hover"></a>
+                                <section>
+                                    <a href="Buy.html" class="bonsai-name" style="position: relative; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category" style="position: relative; right: 16px;">Shohaku Bonsai
+                                    </h5>
+                                    <br>
+                                    <span class="price" style="position: relative; right: 15px;">Rs.4000</span>
+                                </section>
+                            </section>
+                        </th>
+                        <th style="position: relative; right: 60px;" class="product-table">
+                            <section class="table">
+                                <span class="new"
+                                    style="position: relative; bottom: 230px; left: 80px; z-index: 1;">NEW</span>
+                                <a href="Buy.html"><img src="../img/fruit3.jpg" alt="evergreen-bonsai"
+                                        class="product hover"></a>
+                                <section>
+                                    <a href="Buy.html" class="bonsai-name"
+                                        style="position: relative; left: 16px; top: 20px;">Aleppo
+                                        pine</a>
+                                    <h5 class="bonsai-category">Shohaku Bonsai</h5>
+                                    <br>
+                                    <span class="price">Rs.2100</span>
+                                </section>
+                            </section>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div style="height: 510px;">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="logo" id="logo">
+                    <h2>Bonsai World</h2>
+                </div>
+                <div class="address">
+                    <p
+                        style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 500px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px;">
+                        Bonsai World is a company that sells bonsai plants and supplies. We also offer educational
+                        resources
+                        on bonsai cultivation and design.</p>
+                    <p class="footer-para"><span class="span">Address : </span> Kamal Pokhari, Kathmandu, Nepal</p>
+                    <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
+                    <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
+                </div>
+                <div class="quick-link">
+                    <h3 class="footer-title">Quick link</h3>
+                    <ul class="footer-quick">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter
+                    </h3>
+                    <p
+                        style="font-size: 14px; font-family: sans-serif; font-weight: 400; color: #929292; width: 300px;letter-spacing: 2px; word-spacing: 3px; line-height: 25px; padding: 10px; margin-bottom: 10px; margin-right: 90px; position: relative; top: 10px;">
+                        Get updates by subscribe our weekly newsletter</p>
+
+                    <input type="email" name="search" placeholder="Email address..." style=" width: 220px;
+            height: 25px;
+            border: 1px solid #e6e6e6;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 10px;
+            padding-left: 30px;
+            margin: 5px;
+            position: relative;
+            top: 10px;">
+                    <button class="subscribe" type="submit" onclick="subscribe()">
+                        <h3
+                            style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 20px 5px 0;">
+                            subscribe</h3>
+                    </button>
+
+                </div>
+                <div class="footer-payment">
+                    <p
+                        style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 180px; top: 30px;line-height: 23px;">
+                        Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
+                    </p>
+                    <ul class="footer-quick"
+                        style="display: flex; justify-content: flex-end; position: relative; right: 140px; bottom: 47px;">
+                        <li><img src="../img/cash1.png" alt="paymetn"></li>
+                        <li><img src="../img/visa1.png" alt="payement"></li>
+                        <li><img src="../img/master.png" alt="payement"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
+    </div>
     <script>
-        function Buy()
-        {
+        function Buy() {
             alert("Thank you for purchasing");
         }
-        function Cart()
-        {
+        function Cart() {
             alert("Your item has been added to cart");
         }
     </script>
     <script src="../JavaScript/main.js"></script>
 </body>
+
 </html>
