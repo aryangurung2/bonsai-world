@@ -800,7 +800,7 @@
                         </div>
                     </div>
                     <div
-                        style="width: 300px; height: 380px; background-color: #ffff; box-shadow: 0 0 39px rgba(0, 58, 20, 0.1); position: relative; right: 4px;">
+                        style="width: 300px; height: 380px; background-color: #ffff; box-shadow: 0 0 39px rgba(0, 58, 20, 0.1); position: relative; right: 6px;">
                         <a href="../HTML/Research.html"><img src="img/Research.jpg" alt="research"
                                 style="width: 300px; height: 250px;"></a>
                         <p class="date">29/01/2023</p>
@@ -899,30 +899,30 @@
                 </div>
             </div>
         </footer>
-        <script>
-            var images = ['img/slide1.png', 'img/slide2.png', 'img/slide3.png', 'img/slide4.png'];
-
-            var x = 0;
-            var imgs = document.getElementById('img');
-            //The setInterval() calls a function at theintervals (in milliseconds). 
-            setInterval(slider, 3000);
-
-            function slider() {
-
-                if (x < images.length) {
-                    x = x + 1;
-                }
-
-                else {
-                    x = 1;
-                }
-
-
-                imgs.innerHTML = "<img src=" + images[x - 1] + ">";
-            }
-        </script>
-        <script src="JavaScript/main.js"></script>
     </div>
+    <script>
+        var images = ['img/slide1.png', 'img/slide2.png', 'img/slide3.png', 'img/slide4.png'];
+
+        var x = 0;
+        var imgs = document.getElementById('img');
+        //The setInterval() calls a function at theintervals (in milliseconds). 
+        setInterval(slider, 3000);
+
+        function slider() {
+
+            if (x < images.length) {
+                x = x + 1;
+            }
+
+            else {
+                x = 1;
+            }
+
+
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+    </script>
+    <script src="JavaScript/main.js"></script>
 </body>
 
 </html>
