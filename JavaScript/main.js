@@ -54,8 +54,8 @@ const endDate = "30 feb 2023 8:00:00 PM"
         )
         function search()
         {
-            alert("your item have searched");
+            alert("Your items has searched");
         }
         function subscribe(){
-            alert("you have subscribed");
+            alert("Thank you for Subscribe");
         }
