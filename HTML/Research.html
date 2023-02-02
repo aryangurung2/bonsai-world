@@ -16,12 +16,28 @@
         }
 
         .compare {
-            width: 92%;
-            height: 1200px;
+            width: 100%;
+            height: 1250px;
             /* border: 1px solid black; */
             margin-top: 150px;
-            position: relative;
-            left: 65px;
+        }
+
+        .figure {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 390px;
+            /* border: 1px solid red; */
+        }
+
+        figcaption {
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #222222;
+            height: 30px;
+            font-weight: lighter;
+            display: inline;
+            font-style: italic;
         }
 
         .compare h3 {
@@ -38,7 +54,6 @@
         .compare img {
             width: 600px;
             height: 300px;
-            position: relative;
             margin-top: 50px;
         }
 
@@ -95,6 +110,7 @@
             bottom: 200px;
             margin: auto;
             /* border: 1px solid red; */
+            text-align: justify;
         }
 
         .effect-img {
@@ -149,20 +165,29 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div style="width: 100%; height: 100%;">
+        <div style="width: 90%; margin: 10px auto;">
+            <main>
                 <h1
                     style="font-size: 30px; font-family: monospace; font-weight: bold; text-align: center; margin-top: 30px;">
                     Comparing Website "Bonsai World" with other websites</h1>
                 <div class="compare">
                     <h3>1. Comparing with flipkart</h3>
                     <figure>
-                        <a href="../index.html"><img src="../img/bonsaiworldfront.png" alt="bonsai world"
-                                style="width: 600px; height: 300px; " class="effect-img"></a>
-                        <a href="https://www.flipkart.com/" target="_blank"><img src="../img/flipcart.png"
-                                class="effect-img" alt="flipkart"
-                                style="position: relative; left: 90px; width: 650px; height: 300px;"></a>
+                        <div class="figure">
+                            <a href="../index.html" style="position: relative; top: 54px; height: 300px;"><img
+                                    src="../img/bonsaiworldfront.png" alt="bonsai world"
+                                    style="width: 600px; height: 300px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                            <a href="https://www.flipkart.com/" target="_blank"
+                                style="position: relative; top: 54px; height: 300px;"><img src="../img/flipcart.png"
+                                    class="effect-img" alt="flipkart"
+                                    style="width: 650px; height: 300px; position: relative; bottom: 50px;"></a>
+                        </div>
+                        <figcaption style="position: relative; bottom: 20px; left: 220px;">Figure: Bonsai World
+                        </figcaption>
+                        <figcaption style="position: relative; bottom: 20px; left: 860px;">Figure: Flipkart</figcaption>
                     </figure>
+
                     <div class="compare-detail">
                         <table>
                             <tr id="row">
@@ -213,8 +238,10 @@
                         </table>
                     </div>
                     <div class="paragraph">
-                        <p>Bonsai World and Flipkart are two websites with different color themes. Bonsai World's color
-                            theme consists of light green, black, and white, while Flipkart's color theme consists of
+                        <p>Bonsai World and Flipkart are two websites with different color themes. Bonsai World's
+                            color
+                            theme consists of light green, black, and white, while Flipkart's color theme consists
+                            of
                             blue,
                             yellow, white, and black. Both websites have an automatic image slider feature. However,
                             only
@@ -222,11 +249,13 @@
                             navigation
                             bar with options for Home, Product, Research, Blog, About, and Customer Service, while
                             Flipkart
-                            has a logo, search box, login, "Become a Seller", "More", and a cart. Bonsai World does not
+                            has a logo, search box, login, "Become a Seller", "More", and a cart. Bonsai World does
+                            not
                             have
                             a category option on its home page, while Flipkart does. The images on Bonsai World only
                             contain
-                            images of bonsai plants, while the images on Flipkart contain images of almost all products.
+                            images of bonsai plants, while the images on Flipkart contain images of almost all
+                            products.
                             Bonsai World is not optimized for mobile devices, while Flipkart is fully optimized for
                             mobile
                             devices. Both websites have an easy to navigate and use user experience.</p>
@@ -235,11 +264,20 @@
                 <div class="compare">
                     <h3>2. Comparing with Online Bonsai Store</h3>
                     <figure>
-                        <a href="../index.html"><img src="../img/fotterbonsaiworld.png" alt="bonsai world"
-                                style="width: 650px;" class="effect-img"></a>
-                        <a href="https://onlinebonsaistore.com/" target="_blank"><img src="../img/footersection.png"
-                                alt="flipkart" style="position: relative; left: 90px; width: 650px; height: 350px;"
-                                class="effect-img"></a>
+                        <div class="figure">
+                            <a href="../index.html" style="position: relative; top: 54px; height: 300px"><img
+                                    src="../img/fotterbonsaiworld.png" alt="bonsai world"
+                                    style="width: 630px;  position: relative; bottom: 50px;" class="effect-img"></a>
+                            <a href="https://onlinebonsaistore.com/" target="_blank"
+                                style="position: relative; top: 54px; height: 400px;"><img
+                                    src="../img/footersection.png" alt="flipkart"
+                                    style="width: 600px; height: 300px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                        </div>
+                        <figcaption style="position: relative; bottom: 20px; left: 220px;">Figure: Bonsai World
+                        </figcaption>
+                        <figcaption style="position: relative; bottom: 20px; left: 860px;">Figure: Online Bonsai Store
+                        </figcaption>
                     </figure>
                     <div class="compare-detail">
                         <table>
@@ -291,28 +329,40 @@
                         </table>
                     </div>
                     <div class="paragraph">
-                        <p>The footer layout of both websites is slightly similar but the color scheme of Bonsai World
+                        <p>The footer layout of both websites is slightly similar but the color scheme of Bonsai
+                            World
                             is
                             bright and eye-catching, while the color scheme of Online Bonsai World is dull and
                             unappealing.
                             The quick links section of Bonsai World is copied and identical, while the quick links
                             section
-                            of Online Bonsai Store is original and exclusive. Bonsai World does not provide social media
+                            of Online Bonsai Store is original and exclusive. Bonsai World does not provide social
+                            media
                             links, while Online Bonsai Store has an Instagram link. Bonsai World has a subscribe
                             section,
-                            while Online Bonsai World does not. Bonsai World is not optimized for mobile devices, while
+                            while Online Bonsai World does not. Bonsai World is not optimized for mobile devices,
+                            while
                             Online Bonsai World is fully optimized for mobile devices. Both websites target bonsai
                             enthusiasts, but the contact information on each website is different.</p>
                     </div>
                 </div>
-                <div class="compare" style="height: 1350px;">
+                <div class="compare" style="height: 1450px;">
                     <h3>3. Comparing with Daraz</h3>
-                    <figure>
-                        <a href="../index.html"><img src="../img/bonsaiworldproduct.png" alt="bonsai world"
-                                style="width:700px; height: 400px;" class="effect-img"></a>
-                        <a href="https://onlinebonsaistore.com/" target="_blank"><img src="../img/Daraz.png"
-                                alt="flipkart" style="position: relative; left: 40px; width: 650px; height: 400px;"
-                                class="effect-img"></a>
+                    <figure style="height: 480px;">
+                        <div class="figure" style="height: 480px;">
+                            <a href="../index.html" style="position: relative; top: 54px; height: 400px;"><img
+                                    src="../img/bonsaiworldproduct.png" alt="bonsai world"
+                                    style="width:700px; height: 400px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                            <a href="https://onlinebonsaistore.com/" target="_blank"
+                                style="position: relative; top: 54px; height: 400px;"><img src="../img/Daraz.png"
+                                    alt="flipkart"
+                                    style="width: 650px; height: 400px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                        </div>
+                        <figcaption style="position: relative; bottom: 20px; left: 220px;">Figure: Bonsai World
+                        </figcaption>
+                        <figcaption style="position: relative; bottom: 20px; left: 860px;">Figure: Daraz</figcaption>
                     </figure>
                     <div class="compare-detail">
                         <table>
@@ -364,13 +414,18 @@
                         </table>
                     </div>
                     <div class="paragraph">
-                        <p>The website "Bonsai World" has a layout that is focused solely on Bonsai plants, with a color
-                            scheme of light green, black, and white. The font choices are simple and easy to read, while
+                        <p>The website "Bonsai World" has a layout that is focused solely on Bonsai plants, with a
+                            color
+                            scheme of light green, black, and white. The font choices are simple and easy to read,
+                            while
                             the
-                            imagery used is mainly focused on showcasing the Bonsai plants. The user experience is easy
+                            imagery used is mainly focused on showcasing the Bonsai plants. The user experience is
+                            easy
                             to
-                            navigate and use. The functionality of the website is specific to Bonsai plants. The mobile
-                            responsiveness of the website is not optimized for mobile devices. The target audience for
+                            navigate and use. The functionality of the website is specific to Bonsai plants. The
+                            mobile
+                            responsiveness of the website is not optimized for mobile devices. The target audience
+                            for
                             "Bonsai World" is Bonsai enthusiasts.<br><br>
                             On the other hand, the website "Daraz" has a broader layout that showcases multiple
                             categories
@@ -379,24 +434,47 @@
                             The imagery used showcases a variety of products, making it appealing to a wide range of
                             customers. The user experience of the website is user-friendly and intuitive. The
                             functionality
-                            of the website is wide-ranging, covering a variety of products and categories. The mobile
-                            responsiveness of the website is fully optimized for mobile devices. The target audience for
+                            of the website is wide-ranging, covering a variety of products and categories. The
+                            mobile
+                            responsiveness of the website is fully optimized for mobile devices. The target audience
+                            for
                             "Daraz" is a wide range of customers.</p>
                     </div>
                 </div>
                 <div class="compare" style="height: 1900px;">
                     <h3>4. Comparing with Online Bonsai Store</h3>
-                    <figure>
-                        <a href="../index.html"><img src="../img/bonsaibuynow1.png" alt="bonsai world"
-                                style="width:700px; height: 500px;" class="effect-img"></a>
-                        <a href="https://onlinebonsaistore.com/" target="_blank"><img src="../img/buynow1.png"
-                                alt="flipkart" style="position: relative; left: 40px; width: 650px; height: 450px;"
-                                class="effect-img"></a>
-                        <a href=""><img src="../img/bonsaibuynow2.png" style="width: 750px; height: 500px;"
-                                class="effect-img"></a>
-                        <a href=""><img src="../img/buynow2.png"
-                                style="position: relative; left: 20px; width: 620px; height: 400px;"
-                                class="effect-img"></a>
+                    <figure style="height: 480px;">
+                        <div class="figure" style="height: 480px;">
+                            <a href="../index.html" style="position: relative; top: 54px; height: 400px;"><img
+                                    src="../img/bonsaibuynow1.png" alt="bonsai world"
+                                    style="width:600px; height: 400px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                            <a href="https://onlinebonsaistore.com/" target="_blank"
+                                style="position: relative; top: 54px; height: 400px;"><img src="../img/buynow1.png"
+                                    alt="flipkart"
+                                    style="width: 600px; height: 400px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                        </div>
+                        <figcaption style="position: relative; bottom: 20px; left: 220px;">Figure: Bonsai World
+                        </figcaption>
+                        <figcaption style="position: relative; bottom: 20px; left: 860px;">Figure: Online Bonsai Store
+                        </figcaption>
+                    </figure>
+                    <figure style="height: 480px;">
+                        <div class="figure" style="height: 480px;">
+                            <a href="" style="position: relative; top: 54px; height: 400px;"><img
+                                    src="../img/bonsaibuynow2.png"
+                                    style="width: 600px; height: 400px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                            <a href="" style="position: relative; top: 54px; height: 400px;"><img
+                                    src="../img/buynow2.png"
+                                    style="width: 620px; height: 400px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                        </div>
+                        <figcaption style="position: relative; bottom: 20px; left: 220px;">Figure: Bonsai World
+                        </figcaption>
+                        <figcaption style="position: relative; bottom: 20px; left: 860px;">Figure: Online Bonsai Store
+                        </figcaption>
                     </figure>
                     <div class="compare-detail">
                         <table>
@@ -450,29 +528,48 @@
                     <div class="paragraph">
                         <p>Bonsai World and Online Bonsai Store have similar layouts and both provide product
                             descriptions.
-                            However, Bonsai World has a "Buy Now" option while Online Bonsai Store does not. The color
-                            scheme of Bonsai World is green, black, and white, while Online Bonsai Store has a different
+                            However, Bonsai World has a "Buy Now" option while Online Bonsai Store does not. The
+                            color
+                            scheme of Bonsai World is green, black, and white, while Online Bonsai Store has a
+                            different
                             color scheme. Online Bonsai Store allows quantity selection when adding to cart, while
                             Bonsai
                             World does not. Bonsai World features related products in four categories, while Online
                             Bonsai
-                            Store features related products in three categories. Online Bonsai Store has a product zoom
+                            Store features related products in three categories. Online Bonsai Store has a product
+                            zoom
                             option, which Bonsai World does not have. Bonsai World is bonsai plant specific, while
                             Online
-                            Bonsai Store offers a wide range of products and categories related to bonsai plants.</p>
+                            Bonsai Store offers a wide range of products and categories related to bonsai plants.
+                        </p>
                     </div>
                 </div>
-                <div class="compare" style="height: 2000px;">
+                <div class="compare" style="height: 2200px;">
                     <h3>5. Comparing with Maptia</h3>
-                    <figure>
-                        <a href="Blog.html"><img src="../img/technologyblog.png" alt="bonsai world"
-                                style="width:1000px; height: 420px;" class="effect-img"></a>
-                        <a href="Blog.html"><img src="../img/blog4.png" style="width: 600px; height: 600px;"
+                    <div style="width: 100%; height: 510px;">
+                        <a href="Blog.html" style="position: relative; top: 54px; height: 420px;"><img
+                                src="../img/technologyblog.png" alt="bonsai world"
+                                style="width:1000px; height: 420px; position: relative; bottom: 50px;"
                                 class="effect-img"></a>
-                        <a href="https://onlinebonsaistore.com/" target="_blank"><img src="../img/Blogresearch.png"
-                                alt="flipkart"
-                                style="position: relative; left: 40px; width: 750px; height: 500px; bottom: 30px;"
-                                class="effect-img"></a>
+                        <figcaption style="position: relative; top: 30px; right: 600px;">Figure: Bonsai World
+                        </figcaption>
+                    </div>
+                    <figure style="height: 700px;">
+                        <div class="figure" style="height: 700px;">
+                            <a href="Blog.html" style="position: relative; top: 54px; height: 600px;"><img
+                                    src="../img/blog4.png"
+                                    style="width: 600px; height: 600px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                            <a href="https://onlinebonsaistore.com/" target="_blank"
+                                style="position: relative;top: 54px; height: 500px;"><img src="../img/Blogresearch.png"
+                                    alt="flipkart"
+                                    style="width: 750px; height: 500px; bottom: 30px; position: relative; bottom: 50px;"
+                                    class="effect-img"></a>
+                        </div>
+                        <figcaption style="position: relative; bottom: 20px; left: 220px;">Figure: Bonsai World
+                        </figcaption>
+                        <figcaption style="position: relative; bottom: 130px; left: 800px;">Figure: Maptia
+                        </figcaption>
                     </figure>
                     <div class="compare-detail">
                         <table>
@@ -514,20 +611,26 @@
                         </table>
                     </div>
                     <div class="paragraph">
-                        <p>In terms of web design, Bonsai World has a clean and simple layout with a color scheme that
+                        <p>In terms of web design, Bonsai World has a clean and simple layout with a color scheme
+                            that
                             is focused on green, black, and white. The navigation is clear and straightforward. The
-                            mobile responsiveness is good. The images and graphics are high-quality and focused on the
+                            mobile responsiveness is good. The images and graphics are high-quality and focused on
+                            the
                             bonsai products. The overall user experience is centered around providing product
                             information.<br><br>
 
-                            On the other hand, Maptia.com has a different layout with a vibrant, warm, and earthy color
-                            scheme. The navigation is intuitive and easy to use. The mobile responsiveness is excellent.
+                            On the other hand, Maptia.com has a different layout with a vibrant, warm, and earthy
+                            color
+                            scheme. The navigation is intuitive and easy to use. The mobile responsiveness is
+                            excellent.
                             The images and graphics are high-quality and focus on storytelling. The overall user
-                            experience is engaging and immersive, aimed at delivering a unique storytelling experience.
+                            experience is engaging and immersive, aimed at delivering a unique storytelling
+                            experience.
                         </p>
                     </div>
                 </div>
-        </main>
+            </main>
+        </div>
         <footer>
             <div style="height: 510px;">
                 <div class="logo">
