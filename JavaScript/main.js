@@ -8,7 +8,6 @@ const endDate = "30 feb 2023 8:00:00 PM"
             const diff = (end - now);
 
             if (diff < 0) return;
-
             // convert into days;
             let days = Math.floor(diff / (1000 * 60 * 60 * 24));
             let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
