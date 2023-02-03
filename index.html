@@ -3,11 +3,13 @@
 
 <head>
     <!-- This is a meta tag-->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description"
+        content="The website name is Bonsai world it has a green, grey white and black color theme. it has a navigation bar i.e. home, products,about us, research, and blog. It has a dyananic image slider that shows different bonsai plants. the trending products of bonsai plants is  Appleo pine, satsuki Azalee, Maple, Japanese Pine,pine, Japanese Black PIne, Ficus, Malus, it sells two types of bonsai Shohaku bonsai and Zouki Bonsai. it has deals of the weeks. the product listed in deals of the weeks are Macrophylluse, Black Pine, Maple, Java Black Pine. it has a research and Blog link section. it has a footer section with signup option for new visitors. quik link option for 5 web pages as like navigation bar">
+    <meta name="keywords"
+        content="Bonsai, Japanese, plants, small plants, bonsai tree, beutiful plants, bonsai tree, tree, japanese tree, Maple, Apple tree, bonsai world, world, tree hub, bonsai tools, decoration, Satsuki Azale, Zouki Bonsai, About us, research , our blog, Japanese culture, best website to buy bonsai, best bonsai in the world, what is bonsai, bonsai in nepal, different types of bonsai, Shohaku bonsai, pine. Macrophylluse, Black Pine, Maple, Java Black Pine">
     <meta name="author" content="Aryan Gurung, Ishwor Shrestha, Pramit Gaha, Upama Pokharel">
-    <!-- Linking external-->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- Linking external css-->
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Bonsai World</title>
     <!-- This is a internal CSS for this webpage
     it includes styles for various elements on the page suchs as links, buttons
@@ -26,6 +28,7 @@
             position: relative;
             top: 10px;
         }
+
         /* define width, height, position of container for dynamic image slide */
         #img {
             width: 30%;
@@ -35,11 +38,13 @@
             left: 850px;
             bottom: 30px;
         }
+
         /* define width, height of image for dynamic image slide */
         #img img {
             width: 100%;
             height: 100%;
         }
+
         .content {
             width: 30%;
             position: relative;
@@ -113,6 +118,11 @@
         .product {
             width: 260px;
             height: 260px;
+        }
+
+        .hover:hover {
+            box-shadow: 0.1px 0.1px 8px 1px #616161;
+            transition-duration: 350ms;
         }
 
         .new {
@@ -194,6 +204,7 @@
 
         }
 
+        /* This is section of css for time count down */
         .count {
             display: flex;
             width: 400px;
@@ -254,6 +265,7 @@
             color: #3a3a3a;
         }
 
+        /* This is a section to make right traingle in blog and research option in home page */
         .triangle-right {
             position: relative;
             left: 6px;
@@ -284,6 +296,7 @@
             transition-duration: 350ms;
         }
 
+        /* This css used to make circle */
         .circle {
             position: relative;
             left: 125px;
@@ -319,6 +332,7 @@
 </head>
 
 <body>
+    <!-- this is a outer wrapper -->
     <div style="width: 100%;">
         <!--this is a header section-->
         <header id="header">
@@ -330,6 +344,7 @@
                     <li><a href="../HTML/Blog.html">Blog</a></li>
                     <li><a href="../HTML/About.html">About Us</a></li>
                 </ul>
+                <!-- this is customer service part -->
                 <div style="position:relative; left:75%; bottom: 35%; width: 150px; height: 30px; cursor: pointer;">
                     <img src="img/customer.png" alt="customer-logo"
                         style="width: 25px; height: 25px; position: relative; right: 10px;bottom: 3px;">
@@ -341,32 +356,37 @@
                         Customer Support</p>
                 </div>
             </nav>
+            <!-- This html used to define logo -->
             <div class="head" style="height: 150px;">
                 <div class="logo">
                     <img src="img/logo.png" alt="logo" id="logo">
                     <h2>Bonsai World</h2>
                 </div>
-
+                <!-- Created to make search box in home page -->
                 <div class="search-box">
                     <input type="text" name="search" placeholder="Search here...">
                     <button class="search" onclick="search()">
                         <img src="img/search.png" alt="search" width="30px" height="30px">
                     </button>
                 </div>
+                <!-- created a button for register and login -->
                 <div class="extra">
                     <h3
                         style="font-family:sans-serif; font-size: 16px; font-weight: lighter; color: #222222; letter-spacing: 2px;">
                         <span class="register">Register</span> / <span class="register
                 ">Login</span>
                     </h3>
+                    <!-- images for liked products-->
                     <img src="img/heart.png" alt="bookmark"
                         style="width: 70px; height: 70px; position: relative; bottom: 25px;">
+                    <!-- images for cart -->
                     <img src="img/cart.png" alt="cart"
                         style="width: 70px; height: 70px; position: relative; bottom: 25px;">
                 </div>
             </div>
         </header>
         <main>
+            <!-- defines html for dynamic image slider  -->
             <div class="slider">
                 <div id="img">
                     <img src="img/slide4.png" alt="bonsai">
@@ -384,6 +404,7 @@
                     <a href="../HTML/products.html">Buy Now</a>
                 </div>
             </div>
+            <!-- this is a inner wrapper that wrap all expect header and footer -->
             <div style="width: 85%; margin: 10px auto;">
                 <section class="content2">
                     <section>
@@ -408,12 +429,13 @@
                     </section>
 
                 </section>
-
+                <!-- This html is for Trending product of home page -->
                 <section style="height: 900px; margin-top: 200px;">
                     <h3
                         style="text-align: center; font-size: 35px; color: #222222; font-weight: bold; font-family:monospace; word-spacing: 10px; letter-spacing: 1px;">
                         Trending Products</h3>
-                    <table style="width: 100%; height: 830px; padding: 35px 0; ">
+                    <!-- define table to list the product -->
+                    <table style="width: 100%; height: 850px; padding: 35px 0; ">
                         <tr>
                             <th style="width: 30%; height: 380px;">
                                 <section class="table">
@@ -583,6 +605,7 @@
                             style="width: 280px; height: 280px; position: relative; bottom: 230px; left: 290px;">
                     </section>
                 </div>
+                <!-- deal of the week product list -->
                 <section class="deal">
                     <h2
                         style="text-align: center; font-size: 35px; font-weight: bold; font-weight: bold; color: #222222; font-family: monospace; letter-spacing: 2px;">
@@ -680,6 +703,7 @@
                                 <section class="table">
                                     <a href="..HTML/Buy.html"><img src="img/leaf1.jpg" alt="evergreen-bonsai"
                                             class="product hover"></a>
+                                    <!-- this section define input value to put timer value using JS to make time count down -->
                                     <section class="count"
                                         style="position: relative; left: 13px; bottom: 80px; width: 200px;">
                                         <section>
@@ -832,6 +856,7 @@
             </div>
         </main>
         <footer>
+            <!-- logo of bonsai world -->
             <div style="height: 510px;">
                 <div class="logo">
                     <img src="img/logo.png" alt="logo" id="logo">
@@ -847,6 +872,7 @@
                     <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
                     <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
                 </div>
+                <!-- This is a quick link as navigation bar -->
                 <div class="quick-link">
                     <h3 class="footer-title">Quick link</h3>
                     <ul class="footer-quick">
@@ -857,6 +883,7 @@
                         <li><a href="../HTML/Blog.html">Blog</a></li>
                     </ul>
                 </div>
+                <!-- this is container that hold signup options for new visitors -->
                 <div class="newsletter">
                     <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter
                     </h3>
@@ -874,6 +901,7 @@
                     margin: 5px;
                     position: relative;
                     top: 10px;">
+                    <!-- this is button that calls subscribe() function of Js when it clicked -->
                     <button class="subscribe" type="submit" onclick="subscribe()">
                         <h3
                             style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 20px 5px 0;">
@@ -881,11 +909,13 @@
                     </button>
 
                 </div>
+                <!-- this is a copyright section -->
                 <div class="footer-payment">
                     <p
                         style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 180px; top: 30px;line-height: 23px;">
                         Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
                     </p>
+                    <!-- visa card display that we support -->
                     <ul class="footer-quick"
                         style="display: flex; justify-content: flex-end; position: relative; right: 140px; bottom: 47px;">
                         <li><img src="img/cash1.png" alt="paymetn"></li>
@@ -897,14 +927,15 @@
             </div>
         </footer>
     </div>
+    <!-- this is a internal JavaScript used to make dyanmic image slider -->
     <script>
+        // this is a array of image
         var images = ['img/slide1.png', 'img/slide2.png', 'img/slide3.png', 'img/slide4.png'];
 
         var x = 0;
         var imgs = document.getElementById('img');
         //The setInterval() calls a function at theintervals (in milliseconds). 
         setInterval(slider, 3000);
-
         function slider() {
 
             if (x < images.length) {
@@ -919,6 +950,7 @@
             imgs.innerHTML = "<img src=" + images[x - 1] + ">";
         }
     </script>
+    <!-- This is a link of external JavaScript used to connect this webpage with external JS -->
     <script src="JavaScript/main.js"></script>
 </body>
 

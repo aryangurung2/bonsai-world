@@ -2,9 +2,11 @@
 <html>
 
 <head>
-    <meta name="description" content="This is a buy now web page of bonsai world where Apple 
+    <meta name="description"
+        content="This is a buy now web page of bonsai world where Apple 
     tree image and description is availabe and it has buy now and and add to cart opiton and there is related product list. add to cart and buy now section has a javaScript that gives suitable message when it clicked ">
-    <meta name="keywords" content="Buy now , buy, Bonsai world, world , Bonsai , Apple Tree, bonsai plants, bonsai world, Releated product list, Add to cart, Japanese bonsai tree, Japanese Art, Best bonsai">
+    <meta name="keywords"
+        content="Buy now , buy, Bonsai world, world , Bonsai , Apple Tree, bonsai plants, bonsai world, Releated product list, Add to cart, Japanese bonsai tree, Japanese Art, Best bonsai">
     <meta name="author" content="Aryan Gurung, Ishwor Shrestha, Pramit Gaha, Upama Pokharel">
     <!-- linked to external CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
@@ -14,6 +16,7 @@
             color: #40A944;
         }
 
+        /* this is go back CSS */
         .goback a {
             font-size: 18px;
             font-family: sans-serif;
@@ -31,6 +34,7 @@
             transition-duration: 300ms;
         }
 
+        /* css for cart */
         .cart {
             position: relative;
             top: 30px;
@@ -58,6 +62,7 @@
             transition-duration: 350ms;
         }
 
+        /* descrioption paragraph css */
         .description {
             font-family: sans-serif;
             color: #222222;
@@ -163,16 +168,18 @@
 </head>
 
 <body>
-    <div style="width: 100%;">
+    <!-- This is a outer wrapper -->
+    <div style="width: 100%">
         <header id="header">
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="products.html" class="visited">Products</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="Research.html">Research</a></li>
                     <li><a href="Blog.html">Blog</a></li>
-                    <li><a href="About.html" >About Us</a></li>
+                    <li><a href="About.html" class="visited">About Us</a></li>
                 </ul>
+                <!-- this is customer service part -->
                 <div style="position:relative; left:75%; bottom: 35%; width: 150px; height: 30px; cursor: pointer;">
                     <img src="../img/customer.png" alt="customer-logo"
                         style="width: 25px; height: 25px; position: relative; right: 10px;bottom: 3px;">
@@ -184,26 +191,29 @@
                         Customer Support</p>
                 </div>
             </nav>
+            <!-- This html used to define logo -->
             <div class="head" style="height: 150px;">
                 <div class="logo">
                     <img src="../img/logo.png" alt="logo" id="logo">
                     <h2>Bonsai World</h2>
                 </div>
-
+                <!-- Created to make search box in home page -->
                 <div class="search-box">
                     <input type="text" name="search" placeholder="Search here...">
                     <button class="search" onclick="search()">
                         <img src="../img/search.png" alt="search" width="30px" height="30px">
                     </button>
                 </div>
+                <!-- created a button for register and login -->
                 <div class="extra">
                     <h3
                         style="font-family:sans-serif; font-size: 16px; font-weight: lighter; color: #222222; letter-spacing: 2px;">
-                        <span class="register">Register</span> / <span class="register
-        ">Login</span>
+                        <span class="register">Register</span> / <span class="register">Login</span>
                     </h3>
+                    <!-- images for liked products-->
                     <img src="../img/heart.png" alt="bookmark"
                         style="width: 70px; height: 70px; position: relative; bottom: 25px;">
+                    <!-- images for cart -->
                     <img src="../img/cart.png" alt="cart"
                         style="width: 70px; height: 70px; position: relative; bottom: 25px;">
                 </div>
@@ -219,7 +229,11 @@
                     <h2 class="title">Apple Tree</h2>
                     <span class="title"
                         style="font-size: 20px; font-weight: bold; position: relative; top: 30px;">Rs.4000</span>
-                    <p class="description" style="position: relative; top: 70px;">An Apple tree bonsai is a miniature version of an apple tree grown in a small container using bonsai techniques such as pruning, wiring, and shaping to create a miniature replica of a full-sized tree. The fruit produced on an apple tree bonsai is often smaller than that of a full-sized tree but can still be eaten. It is a great choice for indoor or outdoor gardening and can be enjoyed for many years.</p>
+                    <p class="description" style="position: relative; top: 70px;">An Apple tree bonsai is a miniature
+                        version of an apple tree grown in a small container using bonsai techniques such as pruning,
+                        wiring, and shaping to create a miniature replica of a full-sized tree. The fruit produced on an
+                        apple tree bonsai is often smaller than that of a full-sized tree but can still be eaten. It is
+                        a great choice for indoor or outdoor gardening and can be enjoyed for many years.</p>
                     <button class="Buy" type="submit" onclick="Buy()">Buy Now</button>
                     <button onclick="Cart()" class="Add" type="submit"
                         style="display: inline; position: relative; left: 40px; padding: 15px 20px;">Add To
@@ -296,6 +310,7 @@
             </div>
         </main>
         <footer>
+            <!-- This is a footer section -->
             <div style="height: 510px;">
                 <div class="logo">
                     <img src="../img/logo.png" alt="logo" id="logo">
@@ -338,6 +353,7 @@
             margin: 5px;
             position: relative;
             top: 10px;">
+                    <!-- this is button that calls subscribe() function of Js when it clicked -->
                     <button class="subscribe" type="submit" onclick="subscribe()">
                         <h3
                             style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 20px 5px 0;">
@@ -361,6 +377,7 @@
             </div>
         </footer>
     </div>
+    <!-- This is a internal JavaScript -->
     <script>
         function Buy() {
             alert("Thank you for purchasing");
@@ -369,6 +386,7 @@
             alert("Your item has been added to cart");
         }
     </script>
+    <!-- linked to external JavaScript -->
     <script src="../JavaScript/main.js"></script>
 </body>
 

@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" ">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description"
+        content="This is a About us web page of bonsai world where it talk about bonsai wold website. it describes their teams in teams there are four people that are Aryan Gurung, Pramit Gaha, Ishwor Shrestha, Upama pokharel, all the team mate have their protfolio. it will open when see more opiton is clicked. there is a contact us form where Name, email , phone number and message section is listed and ther is Map link by using iframe tag. java script is implemented in this webpage contact us form for form validation. if it fill up black it will pop up suitable alert message.">
+    <meta name="keywords"
+        content="About, About us, About bonsai world, bonsai world, bonsai world detail, contact us of bonsai world, team of bonsai world, Aryan Gurung, Pramit Gaha, Ishwor Shrestha, Upama pokharel, feed back form">
+    <meta name="author" content="Aryan Gurung, Ishwor Shrestha, Pramit Gaha, Upama Pokharel">
+    <!-- linked external CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
     <title>About Us</title>
+    <!-- This is a internal CSS -->
     <style>
         .visited:visited {
             color: #40A944;
@@ -33,6 +37,7 @@
             display: inline;
         }
 
+        /* define width and centered this container */
         .team {
             width: 95%;
             margin: 80px auto;
@@ -48,6 +53,7 @@
             height: 310px;
         }
 
+        /* define each member with this CSS */
         .member {
             width: 300px;
             height: 300px;
@@ -192,6 +198,7 @@
             padding: 15px;
         }
 
+        /* This Css chose 5th input used in Html and implented given CSS */
         form input:nth-child(5) {
             width: 100%;
             border: none;
@@ -207,6 +214,7 @@
             left: 15px;
         }
 
+        /* used hover effect on 5th input tag within form */
         form input:nth-child(5):hover {
             background-color: #222222;
             transition-duration: 350ms;
@@ -215,6 +223,7 @@
 </head>
 
 <body>
+    <!-- this is a outer wraper that wrap whole contain -->
     <div style="width: 100%;">
         <header id="header">
             <nav>
@@ -225,7 +234,8 @@
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a href="About.html" class="visited">About Us</a></li>
                 </ul>
-                <div style="position:relative; left:80%; bottom: 35%; width: 150px; height: 30px; cursor: pointer;">
+                <!-- this is customer service part -->
+                <div style="position:relative; left:75%; bottom: 35%; width: 150px; height: 30px; cursor: pointer;">
                     <img src="../img/customer.png" alt="customer-logo"
                         style="width: 25px; height: 25px; position: relative; right: 10px;bottom: 3px;">
                     <h3 class="customer"
@@ -236,33 +246,38 @@
                         Customer Support</p>
                 </div>
             </nav>
+            <!-- This html used to define logo -->
             <div class="head" style="height: 150px;">
                 <div class="logo">
                     <img src="../img/logo.png" alt="logo" id="logo">
                     <h2>Bonsai World</h2>
                 </div>
-
+                <!-- Created to make search box in home page -->
                 <div class="search-box">
                     <input type="text" name="search" placeholder="Search here...">
                     <button class="search" onclick="search()">
                         <img src="../img/search.png" alt="search" width="30px" height="30px">
                     </button>
                 </div>
+                <!-- created a button for register and login -->
                 <div class="extra">
                     <h3
                         style="font-family:sans-serif; font-size: 16px; font-weight: lighter; color: #222222; letter-spacing: 2px;">
-                        <span class="register">Register</span> / <span class="register
-                ">Login</span>
+                        <span class="register">Register</span> / <span class="register">Login</span>
                     </h3>
+                    <!-- images for liked products-->
                     <img src="../img/heart.png" alt="bookmark"
                         style="width: 70px; height: 70px; position: relative; bottom: 25px;">
+                    <!-- images for cart -->
                     <img src="../img/cart.png" alt="cart"
                         style="width: 70px; height: 70px; position: relative; bottom: 25px;">
                 </div>
             </div>
         </header>
+        <!-- This is a inner wrapper that wrap excluding header and footer -->
         <div style="width: 90%; margin: 10px auto;">
             <main>
+                <!-- this is div for about us detail -->
                 <div class="about">
                     <section style="height: 450px; width: 550px;">
                         <h1
@@ -287,6 +302,7 @@
                     </section>
                     <img src="../img/about.png" alt="Making bonsai" style="width: 700px; height: 450px;">
                 </div>
+                <!-- container that hold all tema member profile -->
                 <div class="team">
                     <h2 style="font-size: 35px; display: block; margin-top: 100px;">Our Teams</h2>
                     <div class="profile">
@@ -347,7 +363,8 @@
                             <h3 style=" font-weight: bold; font-size: 18px; margin-top: 10px; color: #222222; 
                                  font-family: sans-serif;">Team Leader</h3>
                             <p style="font-size: 16px; margin-top: 10px; color: #222222; 
-                                    font-family: sans-serif; line-height: 25px; text-align: justify;">Motivated and ambitious person. Strong
+                                    font-family: sans-serif; line-height: 25px; text-align: justify;">Motivated and
+                                ambitious person. Strong
                                 academic background
                                 with knowlege of HTML, CSS, JAVASCRIPT. proven ability to work effectively in teams and
                                 strong
@@ -358,8 +375,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- contact form section -->
                 <div class="contact-us">
                     <div class="contact-map">
+                        <!-- map is linked using iframe tag -->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14129.247396417946!2d85.31648163080158!3d27.707656224666774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1674822773618!5m2!1sen!2snp"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -367,6 +386,7 @@
                     </div>
                     <div class="contact-form">
                         <h2>Contact Us</h2>
+                        <!-- this is a form section where validate form fucntion is called when it submit -->
                         <form style="margin-top: 20px;" name="messageForm" onsubmit="validateForm()">
                             <input type="text" name="name" placeholder="Name" class="text" />
                             <input type="email" name="email" placeholder="Email" class="text" />
@@ -386,9 +406,10 @@
             </main>
         </div>
         <footer>
+            <!-- logo of bonsai world -->
             <div style="height: 510px;">
                 <div class="logo">
-                    <img src="../img/logo.png" alt="logo" id="logo">
+                    <img src="img/logo.png" alt="logo" id="logo">
                     <h2>Bonsai World</h2>
                 </div>
                 <div class="address">
@@ -401,6 +422,7 @@
                     <p class="footer-para"><span class="span">Email : </span>admin@bonsaiworld.com</p>
                     <p class="footer-para"><span class="span">Call us : </span> 01-3457802</p>
                 </div>
+                <!-- This is a quick link as navigation bar -->
                 <div class="quick-link">
                     <h3 class="footer-title">Quick link</h3>
                     <ul class="footer-quick">
@@ -411,6 +433,7 @@
                         <li><a href="Blog.html">Blog</a></li>
                     </ul>
                 </div>
+                <!-- this is container that hold signup options for new visitors -->
                 <div class="newsletter">
                     <h3 class="footer-title" style="position: relative; bottom:10px; left: 10px;">Sign Up Newsletter
                     </h3>
@@ -428,6 +451,7 @@
                     margin: 5px;
                     position: relative;
                     top: 10px;">
+                    <!-- this is button that calls subscribe() function of Js when it clicked -->
                     <button class="subscribe" type="submit" onclick="subscribe()">
                         <h3
                             style="width: 40px; font-size: 13px; font-family: sans-serif; color: white; padding: 5px 20px 5px 0;">
@@ -435,11 +459,13 @@
                     </button>
 
                 </div>
+                <!-- this is a copyright section -->
                 <div class="footer-payment">
                     <p
                         style="font-size: 13px; font-family: sans-serif; font-weight: 400; color: rgb(243, 243, 243);width: 600px; letter-spacing: 2px; word-spacing: 3px; position: relative; left: 180px; top: 30px;line-height: 23px;">
                         Copyright &#169; 2023 Bonsai World All Rights Reserved.Design by Bonsaiworld.Com
                     </p>
+                    <!-- visa card display that we support -->
                     <ul class="footer-quick"
                         style="display: flex; justify-content: flex-end; position: relative; right: 140px; bottom: 47px;">
                         <li><img src="../img/cash1.png" alt="paymetn"></li>
@@ -451,22 +477,31 @@
             </div>
         </footer>
     </div>
+    <!-- This is a internal JavaScript -->
     <script>
+        // this is a function namce validateForm
         function validateForm() {
+            // get value of name input and store in variable named name
             var name = document.forms["messageForm"]["name"].value;
+            // get value of email input and store in vairable named email
             var email = document.forms["messageForm"]["email"].value;
+            // get value of number input and store in vairable named number
             var number = document.forms["messageForm"]["number"].value;
+            // get value of textarea and store in variable named messageDetails
             var messageDetails = document.forms["messageForm"]["message"].value;
-            //alert(messageDetails);
+            // check the condition
             if (name == "" || email == "" || number == "" || messageDetails == "") {
+                // altert if condition is true
                 alert("Empty fields are present!!! Please enter the values...")
 
             }
+            // if condition is not valid then dislpay this alert message
             else {
                 alert("Thank you for your feedback!!!")
             }
         }
     </script>
+    <!-- linked external JavaScript -->
     <script src="../JavaScript/main.js"></script>
 </body>
 
