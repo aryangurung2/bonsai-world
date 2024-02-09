@@ -1,4 +1,4 @@
-const endDate = "20 May 2023 8:00:00 PM"
+const endDate = "20 Feb 2024 8:00:00 PM"
 
         const inputs = document.getElementsByClassName("time")
 
